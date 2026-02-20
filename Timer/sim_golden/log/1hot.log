@@ -1,0 +1,154 @@
+# vsim -coverage -l 1hot.log -c test_bench -voptargs="+cover=bcesft" -assertdebug -do "coverage save -onexit 1hot.ucdb; log -r /*;run -all" 
+# Start time: 11:01:57 on Oct 06,2025
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# //  Questa Intel Starter FPGA Edition-64
+# //  Version 2024.3 linux_x86_64 Sep 10 2024
+# //
+# // Unpublished work. Copyright 2024 Siemens
+# //
+# // This material contains trade secrets or otherwise confidential information
+# // owned by Siemens Industry Software Inc. or its affiliates (collectively,
+# // "SISW"), or its licensors. Access to and use of this information is strictly
+# // limited as set forth in the Customer's applicable agreements with SISW.
+# //
+# // This material may not be copied, distributed, or otherwise disclosed outside
+# // of the Customer's facilities without the express written permission of SISW,
+# // and may not be used in any way not expressly authorized by SISW.
+# //
+# Loading work.test_bench(fast)
+# coverage save -onexit 1hot.ucdb
+#  log -r /*
+# run -all
+# --------------------------------------------------------------------------
+# t =        131 | [WRITE] addr = 12'h000, wdata = 32'h22222222
+# --------------------------------------------------------------------------
+# pready state when penable is first asserted:
+# t =        152 | [PASS]  pready is OFF
+# t =        171 | [PASS]  pslverr is OFF
+# pready state when transfer ended:
+# t =        192 | [PASS]  pready is OFF
+# --------------------------------------------------------------------------
+# t =        211 | [WRITE] addr = 12'h004, wdata = 32'h33333333
+# --------------------------------------------------------------------------
+# pready state when penable is first asserted:
+# t =        232 | [PASS]  pready is OFF
+# pready state when transfer ended:
+# t =        272 | [PASS]  pready is OFF
+# --------------------------------------------------------------------------
+# t =        291 | [WRITE] addr = 12'h008, wdata = 32'h44444444
+# --------------------------------------------------------------------------
+# pready state when penable is first asserted:
+# t =        312 | [PASS]  pready is OFF
+# pready state when transfer ended:
+# t =        352 | [PASS]  pready is OFF
+# --------------------------------------------------------------------------
+# t =        371 | [WRITE] addr = 12'h00c, wdata = 32'h55555555
+# --------------------------------------------------------------------------
+# pready state when penable is first asserted:
+# t =        392 | [PASS]  pready is OFF
+# pready state when transfer ended:
+# t =        432 | [PASS]  pready is OFF
+# --------------------------------------------------------------------------
+# t =        451 | [WRITE] addr = 12'h010, wdata = 32'h66666666
+# --------------------------------------------------------------------------
+# pready state when penable is first asserted:
+# t =        472 | [PASS]  pready is OFF
+# pready state when transfer ended:
+# t =        512 | [PASS]  pready is OFF
+# --------------------------------------------------------------------------
+# t =        531 | [WRITE] addr = 12'h014, wdata = 32'h77777777
+# --------------------------------------------------------------------------
+# pready state when penable is first asserted:
+# t =        552 | [PASS]  pready is OFF
+# pready state when transfer ended:
+# t =        592 | [PASS]  pready is OFF
+# --------------------------------------------------------------------------
+# t =        611 | [WRITE] addr = 12'h018, wdata = 32'h88888888
+# --------------------------------------------------------------------------
+# pready state when penable is first asserted:
+# t =        632 | [PASS]  pready is OFF
+# pready state when transfer ended:
+# t =        672 | [PASS]  pready is OFF
+# --------------------------------------------------------------------------
+# t =        691 | [WRITE] addr = 12'h01c, wdata = 32'ha55a5aa5
+# --------------------------------------------------------------------------
+# pready state when penable is first asserted:
+# t =        712 | [PASS]  pready is OFF
+# pready state when transfer ended:
+# t =        752 | [PASS]  pready is OFF
+# --------------------------------------------------------------------------
+# t =        771 | [READ]  addr = 12'h000, exp rdata = 32'h00000202
+# --------------------------------------------------------------------------
+# pready state when penable is first asserted:
+# t =        792 | [PASS]  pready is OFF
+# t =        811 | [PASS]  output rdata = 32'h00000202
+# pready state when transfer ended:
+# t =        832 | [PASS]  pready is OFF
+# --------------------------------------------------------------------------
+# t =        851 | [READ]  addr = 12'h004, exp rdata = 32'h33333333
+# --------------------------------------------------------------------------
+# pready state when penable is first asserted:
+# t =        872 | [PASS]  pready is OFF
+# t =        891 | [PASS]  output rdata = 32'h33333333
+# pready state when transfer ended:
+# t =        912 | [PASS]  pready is OFF
+# --------------------------------------------------------------------------
+# t =        931 | [READ]  addr = 12'h008, exp rdata = 32'h44444444
+# --------------------------------------------------------------------------
+# pready state when penable is first asserted:
+# t =        952 | [PASS]  pready is OFF
+# t =        971 | [PASS]  output rdata = 32'h44444444
+# pready state when transfer ended:
+# t =        992 | [PASS]  pready is OFF
+# --------------------------------------------------------------------------
+# t =       1011 | [READ]  addr = 12'h00c, exp rdata = 32'h55555555
+# --------------------------------------------------------------------------
+# pready state when penable is first asserted:
+# t =       1032 | [PASS]  pready is OFF
+# t =       1051 | [PASS]  output rdata = 32'h55555555
+# pready state when transfer ended:
+# t =       1072 | [PASS]  pready is OFF
+# --------------------------------------------------------------------------
+# t =       1091 | [READ]  addr = 12'h010, exp rdata = 32'h66666666
+# --------------------------------------------------------------------------
+# pready state when penable is first asserted:
+# t =       1112 | [PASS]  pready is OFF
+# t =       1131 | [PASS]  output rdata = 32'h66666666
+# pready state when transfer ended:
+# t =       1152 | [PASS]  pready is OFF
+# --------------------------------------------------------------------------
+# t =       1171 | [READ]  addr = 12'h014, exp rdata = 32'h00000001
+# --------------------------------------------------------------------------
+# pready state when penable is first asserted:
+# t =       1192 | [PASS]  pready is OFF
+# t =       1211 | [PASS]  output rdata = 32'h00000001
+# pready state when transfer ended:
+# t =       1232 | [PASS]  pready is OFF
+# --------------------------------------------------------------------------
+# t =       1251 | [READ]  addr = 12'h018, exp rdata = 32'h00000000
+# --------------------------------------------------------------------------
+# pready state when penable is first asserted:
+# t =       1272 | [PASS]  pready is OFF
+# t =       1291 | [PASS]  output rdata = 32'h00000000
+# pready state when transfer ended:
+# t =       1312 | [PASS]  pready is OFF
+# --------------------------------------------------------------------------
+# t =       1331 | [READ]  addr = 12'h01c, exp rdata = 32'h00000003
+# --------------------------------------------------------------------------
+# pready state when penable is first asserted:
+# t =       1352 | [PASS]  pready is OFF
+# t =       1371 | [PASS]  output rdata = 32'h00000003
+# pready state when transfer ended:
+# t =       1392 | [PASS]  pready is OFF
+# ==========================================================================
+# 	SUMMARY:
+# Total test cases run: 41
+# Passed              : 41
+# Failed              : 0
+# PASSED ALL TESTS
+# ==========================================================================
+# ** Note: $finish    : ../tb/test_bench.v(302)
+#    Time: 1492 ns  Iteration: 0  Instance: /test_bench
+# Saving coverage database on exit...
+# End time: 11:01:58 on Oct 06,2025, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0

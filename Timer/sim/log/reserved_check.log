@@ -1,0 +1,138 @@
+# vsim -debugDB -l reserved_check.log -voptargs="+acc" -assertdebug -c test_bench -do "log -r /*;run -all;" 
+# Start time: 17:31:36 on Oct 02,2025
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Note: (vsim-8611) Generating debug db.
+# ** Warning: (vopt-10908) Some optimizations are turned off because the +acc switch is in effect.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# //  Questa Intel Starter FPGA Edition-64
+# //  Version 2024.3 linux_x86_64 Sep 10 2024
+# //
+# // Unpublished work. Copyright 2024 Siemens
+# //
+# // This material contains trade secrets or otherwise confidential information
+# // owned by Siemens Industry Software Inc. or its affiliates (collectively,
+# // "SISW"), or its licensors. Access to and use of this information is strictly
+# // limited as set forth in the Customer's applicable agreements with SISW.
+# //
+# // This material may not be copied, distributed, or otherwise disclosed outside
+# // of the Customer's facilities without the express written permission of SISW,
+# // and may not be used in any way not expressly authorized by SISW.
+# //
+# Loading work.test_bench(fast)
+# Loading work.timer_top(fast)
+# Loading work.apbif(fast)
+# Loading work.cnt_ctrl(fast)
+# Loading work.counter(fast)
+# Loading work.regset(fast)
+# ** Note: (vsim-8900) Creating design debug database vsim.dbg.
+# log -r /*
+# run -all
+# [WRITE] addr = 12'h229, wdata = 32'hffffffff
+# [READ]  addr = 12'h229, expected rdata = 32'h00000000
+# --------------------------------------------------------------------------
+# 	  [PASS] 	  output   rdata = 32'h00000000
+# --------------------------------------------------------------------------
+# [WRITE] addr = 12'h19a, wdata = 32'hffffffff
+# [READ]  addr = 12'h19a, expected rdata = 32'h00000000
+# --------------------------------------------------------------------------
+# 	  [PASS] 	  output   rdata = 32'h00000000
+# --------------------------------------------------------------------------
+# [WRITE] addr = 12'h2fe, wdata = 32'hffffffff
+# [READ]  addr = 12'h2fe, expected rdata = 32'h00000000
+# --------------------------------------------------------------------------
+# 	  [PASS] 	  output   rdata = 32'h00000000
+# --------------------------------------------------------------------------
+# [WRITE] addr = 12'h95a, wdata = 32'hffffffff
+# [READ]  addr = 12'h95a, expected rdata = 32'h00000000
+# --------------------------------------------------------------------------
+# 	  [PASS] 	  output   rdata = 32'h00000000
+# --------------------------------------------------------------------------
+# [WRITE] addr = 12'h42e, wdata = 32'hffffffff
+# [READ]  addr = 12'h42e, expected rdata = 32'h00000000
+# --------------------------------------------------------------------------
+# 	  [PASS] 	  output   rdata = 32'h00000000
+# --------------------------------------------------------------------------
+# [WRITE] addr = 12'hba2, wdata = 32'hffffffff
+# [READ]  addr = 12'hba2, expected rdata = 32'h00000000
+# --------------------------------------------------------------------------
+# 	  [PASS] 	  output   rdata = 32'h00000000
+# --------------------------------------------------------------------------
+# [WRITE] addr = 12'h81b, wdata = 32'hffffffff
+# [READ]  addr = 12'h81b, expected rdata = 32'h00000000
+# --------------------------------------------------------------------------
+# 	  [PASS] 	  output   rdata = 32'h00000000
+# --------------------------------------------------------------------------
+# [WRITE] addr = 12'hd19, wdata = 32'hffffffff
+# [READ]  addr = 12'hd19, expected rdata = 32'h00000000
+# --------------------------------------------------------------------------
+# 	  [PASS] 	  output   rdata = 32'h00000000
+# --------------------------------------------------------------------------
+# [WRITE] addr = 12'h18c, wdata = 32'hffffffff
+# [READ]  addr = 12'h18c, expected rdata = 32'h00000000
+# --------------------------------------------------------------------------
+# 	  [PASS] 	  output   rdata = 32'h00000000
+# --------------------------------------------------------------------------
+# [WRITE] addr = 12'hbd7, wdata = 32'hffffffff
+# [READ]  addr = 12'hbd7, expected rdata = 32'h00000000
+# --------------------------------------------------------------------------
+# 	  [PASS] 	  output   rdata = 32'h00000000
+# --------------------------------------------------------------------------
+# [WRITE] addr = 12'hf5b, wdata = 32'hffffffff
+# [READ]  addr = 12'hf5b, expected rdata = 32'h00000000
+# --------------------------------------------------------------------------
+# 	  [PASS] 	  output   rdata = 32'h00000000
+# --------------------------------------------------------------------------
+# [WRITE] addr = 12'hb2f, wdata = 32'hffffffff
+# [READ]  addr = 12'hb2f, expected rdata = 32'h00000000
+# --------------------------------------------------------------------------
+# 	  [PASS] 	  output   rdata = 32'h00000000
+# --------------------------------------------------------------------------
+# [WRITE] addr = 12'h3b3, wdata = 32'hffffffff
+# [READ]  addr = 12'h3b3, expected rdata = 32'h00000000
+# --------------------------------------------------------------------------
+# 	  [PASS] 	  output   rdata = 32'h00000000
+# --------------------------------------------------------------------------
+# [WRITE] addr = 12'h3c6, wdata = 32'hffffffff
+# [READ]  addr = 12'h3c6, expected rdata = 32'h00000000
+# --------------------------------------------------------------------------
+# 	  [PASS] 	  output   rdata = 32'h00000000
+# --------------------------------------------------------------------------
+# [WRITE] addr = 12'hdd0, wdata = 32'hffffffff
+# [READ]  addr = 12'hdd0, expected rdata = 32'h00000000
+# --------------------------------------------------------------------------
+# 	  [PASS] 	  output   rdata = 32'h00000000
+# --------------------------------------------------------------------------
+# [WRITE] addr = 12'hd40, wdata = 32'hffffffff
+# [READ]  addr = 12'hd40, expected rdata = 32'h00000000
+# --------------------------------------------------------------------------
+# 	  [PASS] 	  output   rdata = 32'h00000000
+# --------------------------------------------------------------------------
+# [WRITE] addr = 12'h118, wdata = 32'hffffffff
+# [READ]  addr = 12'h118, expected rdata = 32'h00000000
+# --------------------------------------------------------------------------
+# 	  [PASS] 	  output   rdata = 32'h00000000
+# --------------------------------------------------------------------------
+# [WRITE] addr = 12'hd8c, wdata = 32'hffffffff
+# [READ]  addr = 12'hd8c, expected rdata = 32'h00000000
+# --------------------------------------------------------------------------
+# 	  [PASS] 	  output   rdata = 32'h00000000
+# --------------------------------------------------------------------------
+# [WRITE] addr = 12'h8a8, wdata = 32'hffffffff
+# [READ]  addr = 12'h8a8, expected rdata = 32'h00000000
+# --------------------------------------------------------------------------
+# 	  [PASS] 	  output   rdata = 32'h00000000
+# --------------------------------------------------------------------------
+# [WRITE] addr = 12'h187, wdata = 32'hffffffff
+# [READ]  addr = 12'h187, expected rdata = 32'h00000000
+# --------------------------------------------------------------------------
+# 	  [PASS] 	  output   rdata = 32'h00000000
+# --------------------------------------------------------------------------
+# 	SUMMARY:
+# Total test cases run: 20
+# Passed              : 20
+# Failed              : 0
+# PASSED ALL TESTS
+# ** Note: $finish    : ../tb/test_bench.v(146)
+#    Time: 3411 ns  Iteration: 0  Instance: /test_bench
+# End time: 17:31:37 on Oct 02,2025, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 1

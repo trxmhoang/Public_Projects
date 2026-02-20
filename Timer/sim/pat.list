@@ -1,0 +1,12 @@
+init
+rw
+reserved
+1hot
+byte_access
+cnt_ctrl
+cnt
+int
+halt
+apb
+unaligned
+//draft

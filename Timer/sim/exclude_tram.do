@@ -1,0 +1,3 @@
+coverage exclude -src ../rtl/apbif.v -code e -line 12-13 -comment {pready cannot be high when psel/penable never asserted} 
+coverage exclude -src ../rtl/cnt_ctrl.v -code b -line 33 -item 3 -comment {When timer_en = 0 or div_en = 0, internal counter must reset. => The branch int_cnt_next = int_cnt never executes because the int_cnt_rst always overides the hold condition when int_cnt_en is low} 
+coverage exclude -src ../rtl/cnt_ctrl.v -code e -line 44 -comment {When div_val != 0 and int_cnt == limit, cnt_en is asserted and the internal counter resets immediately (via int_cnt_rst logic) => Coverage cannot detect the state} 

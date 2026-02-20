@@ -1,0 +1,97 @@
+# vsim -coverage -l init.log -c test_bench -voptargs="+cover=bcesft" -assertdebug -do "coverage save -onexit init.ucdb; log -r /*;run -all" 
+# Start time: 03:01:37 on Oct 12,2025
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# //  Questa Intel Starter FPGA Edition-64
+# //  Version 2024.3 linux_x86_64 Sep 10 2024
+# //
+# // Unpublished work. Copyright 2024 Siemens
+# //
+# // This material contains trade secrets or otherwise confidential information
+# // owned by Siemens Industry Software Inc. or its affiliates (collectively,
+# // "SISW"), or its licensors. Access to and use of this information is strictly
+# // limited as set forth in the Customer's applicable agreements with SISW.
+# //
+# // This material may not be copied, distributed, or otherwise disclosed outside
+# // of the Customer's facilities without the express written permission of SISW,
+# // and may not be used in any way not expressly authorized by SISW.
+# //
+# Loading work.test_bench(fast)
+# coverage save -onexit init.ucdb
+#  log -r /*
+# run -all
+# --------------------------------------------------------------------------
+# t =        131 | [READ]  addr = 12'h000, exp rdata = 32'h00000100
+# --------------------------------------------------------------------------
+# pready state when penable is first asserted:
+# t =        152 | [PASS]  pready is OFF
+# t =        171 | [PASS]  output rdata = 32'h00000100
+# pready state when transfer ended:
+# t =        192 | [PASS]  pready is OFF
+# --------------------------------------------------------------------------
+# t =        211 | [READ]  addr = 12'h004, exp rdata = 32'h00000000
+# --------------------------------------------------------------------------
+# pready state when penable is first asserted:
+# t =        232 | [PASS]  pready is OFF
+# t =        251 | [PASS]  output rdata = 32'h00000000
+# pready state when transfer ended:
+# t =        272 | [PASS]  pready is OFF
+# --------------------------------------------------------------------------
+# t =        291 | [READ]  addr = 12'h008, exp rdata = 32'h00000000
+# --------------------------------------------------------------------------
+# pready state when penable is first asserted:
+# t =        312 | [PASS]  pready is OFF
+# t =        331 | [PASS]  output rdata = 32'h00000000
+# pready state when transfer ended:
+# t =        352 | [PASS]  pready is OFF
+# --------------------------------------------------------------------------
+# t =        371 | [READ]  addr = 12'h00c, exp rdata = 32'hffffffff
+# --------------------------------------------------------------------------
+# pready state when penable is first asserted:
+# t =        392 | [PASS]  pready is OFF
+# t =        411 | [PASS]  output rdata = 32'hffffffff
+# pready state when transfer ended:
+# t =        432 | [PASS]  pready is OFF
+# --------------------------------------------------------------------------
+# t =        451 | [READ]  addr = 12'h010, exp rdata = 32'hffffffff
+# --------------------------------------------------------------------------
+# pready state when penable is first asserted:
+# t =        472 | [PASS]  pready is OFF
+# t =        491 | [PASS]  output rdata = 32'hffffffff
+# pready state when transfer ended:
+# t =        512 | [PASS]  pready is OFF
+# --------------------------------------------------------------------------
+# t =        531 | [READ]  addr = 12'h014, exp rdata = 32'h00000000
+# --------------------------------------------------------------------------
+# pready state when penable is first asserted:
+# t =        552 | [PASS]  pready is OFF
+# t =        571 | [PASS]  output rdata = 32'h00000000
+# pready state when transfer ended:
+# t =        592 | [PASS]  pready is OFF
+# --------------------------------------------------------------------------
+# t =        611 | [READ]  addr = 12'h018, exp rdata = 32'h00000000
+# --------------------------------------------------------------------------
+# pready state when penable is first asserted:
+# t =        632 | [PASS]  pready is OFF
+# t =        651 | [PASS]  output rdata = 32'h00000000
+# pready state when transfer ended:
+# t =        672 | [PASS]  pready is OFF
+# --------------------------------------------------------------------------
+# t =        691 | [READ]  addr = 12'h01c, exp rdata = 32'h00000000
+# --------------------------------------------------------------------------
+# pready state when penable is first asserted:
+# t =        712 | [PASS]  pready is OFF
+# t =        731 | [PASS]  output rdata = 32'h00000000
+# pready state when transfer ended:
+# t =        752 | [PASS]  pready is OFF
+# ==========================================================================
+# 	SUMMARY:
+# Total test cases run: 24
+# Passed              : 24
+# Failed              : 0
+# Test_result PASSED
+# ==========================================================================
+# ** Note: $finish    : ../tb/test_bench.v(321)
+#    Time: 852 ns  Iteration: 0  Instance: /test_bench
+# Saving coverage database on exit...
+# End time: 03:01:37 on Oct 12,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0

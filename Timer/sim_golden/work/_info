@@ -1,0 +1,197 @@
+m255
+K4
+z2
+Z0 !s12c _opt
+Z1 !s99 nomlopt
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+!s11f vlog 2024.3 2024.09, Sep 10 2024
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z2 d/ictc/student_data/tramhoang/timer_advanced/sim1
+T_opt
+!s110 1759885673
+Va6CB=E[=3mGFNnF9ljF2B0
+04 10 4 work test_bench fast 0
+=1-bc2411209e67-68e5b969-4d88a-1d76a
+R1
+!s12f OEM100
+!s12b OEM100
+!s124 OEM10U7 
+!s135 nogc
+o-quiet -auto_acc_if_foreign -work work -debugdb +acc
+Z3 tCvgOpt 0
+n@_opt
+OL;O;2024.3;79
+vapbif
+Z4 2../rtl/apbif.v|../rtl/regset.v|../rtl/cnt_ctrl.v|../rtl/counter.v|../rtl/timer_top.v|../tb_golden/test_bench.v
+Z5 !s110 1759885671
+!i10b 1
+!s100 g>=Agjg6bZgcDXN^fU7al2
+IZ>=eY>d8<M3hDSAl2gQ=@0
+R2
+w1759648373
+8../rtl/apbif.v
+F../rtl/apbif.v
+!i122 7
+L0 1 29
+Z6 VDg1SIo80bB@j0V0VzS_@n1
+Z7 OL;L;2024.3;79
+r1
+!s85 0
+31
+Z8 !s108 1759885671.000000
+Z9 !s107 run_test.v|../tb_golden/test_bench.v|../rtl/timer_top.v|../rtl/counter.v|../rtl/cnt_ctrl.v|../rtl/regset.v|../rtl/apbif.v|
+Z10 !s90 -f|compile.f|
+!i113 0
+Z11 o-L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R3
+vcnt_ctrl
+R4
+R5
+!i10b 1
+!s100 Dh6D2;T^P`a@S:nk^a9<j0
+I<b<jG315?P>5G0PLZ]EMZ0
+R2
+w1759655481
+8../rtl/cnt_ctrl.v
+F../rtl/cnt_ctrl.v
+!i122 7
+L0 1 47
+R6
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 0
+R11
+R3
+vcounter
+R4
+R5
+!i10b 1
+!s100 TzI^EYR[ch4_oT>_VFn3l2
+I^c5=K;_?<^eaWLj5mS]D<3
+R2
+w1759655874
+8../rtl/counter.v
+F../rtl/counter.v
+!i122 7
+L0 1 40
+R6
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 0
+R11
+R3
+vmod_golden_cnt
+R4
+R5
+!i10b 1
+!s100 9LCi88EXIW>oo[3V>@BI82
+Ia<LQm@mGbQCTX1966c:Y43
+R2
+w1759848997
+Z12 8../tb_golden/test_bench.v
+Z13 F../tb_golden/test_bench.v
+!i122 7
+L0 423 65
+R6
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 0
+R11
+R3
+vregset
+R4
+R5
+!i10b 1
+!s100 bIbXfE_0cY<eHf9P1ZPYf2
+I<ReH_zBVP>48eRoUIbE3U3
+R2
+w1759652731
+8../rtl/regset.v
+F../rtl/regset.v
+!i122 7
+L0 1 166
+R6
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 0
+R11
+R3
+vtest_bench
+R4
+R5
+!i10b 1
+!s100 FW^Gn:[gTeI6DR7afQG]23
+Ij4W9Y3@B9cfP0gk08j6<=0
+R2
+w1759885671
+R12
+R13
+Frun_test.v
+!i122 7
+L0 1 712
+R6
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 0
+R11
+R3
+vtimer_top
+R4
+R5
+!i10b 1
+!s100 ZR05iEn<TO77[`g1BlE371
+I?ha5ze?[>CTFQ:@8gaY6D0
+R2
+w1759656133
+8../rtl/timer_top.v
+F../rtl/timer_top.v
+!i122 7
+L0 1 35
+R6
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 0
+R11
+R3

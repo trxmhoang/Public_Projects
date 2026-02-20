@@ -1,0 +1,15 @@
+Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+Start time: 08:07:51 on Oct 08,2025
+vlog -f compile.f 
+-- Compiling module apbif
+-- Compiling module regset
+-- Compiling module cnt_ctrl
+-- Compiling module counter
+-- Compiling module timer_top
+-- Compiling module test_bench
+-- Compiling module mod_golden_cnt
+
+Top level modules:
+	test_bench
+End time: 08:07:51 on Oct 08,2025, Elapsed time: 0:00:00
+Errors: 0, Warnings: 0

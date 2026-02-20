@@ -1,0 +1,51 @@
+task run_test();
+    begin
+        $display ("*****TCR*****");
+        test_bench.wr (12'h1, 32'hffff_ffff);
+        test_bench.wr (12'h2, 32'hffff_ffff);
+        test_bench.wr (12'h3, 32'hffff_ffff);
+        test_bench.rd (test_bench.tcr, 32'h0000_0100);
+        
+        $display ("*****TDR0*****");
+        test_bench.wr (12'h5, 32'hffff_ffff);
+        test_bench.wr (12'h6, 32'hffff_ffff);
+        test_bench.wr (12'h7, 32'hffff_ffff);
+        test_bench.rd (test_bench.tdr0, 32'h0);
+
+        $display ("*****TDR1*****");
+        test_bench.wr (12'h9, 32'hffff_ffff);
+        test_bench.wr (12'ha, 32'hffff_ffff);
+        test_bench.wr (12'hb, 32'hffff_ffff);
+        test_bench.rd (test_bench.tdr1, 32'h0);
+
+        $display ("*****TCMP0*****");
+        test_bench.wr (12'hd, 32'h0);
+        test_bench.wr (12'he, 32'h0);
+        test_bench.wr (12'hf, 32'h0);
+        test_bench.rd (test_bench.tcmp0, 32'hffff_ffff);
+
+        $display ("*****TCMP1*****");
+        test_bench.wr (12'h11, 32'h0);
+        test_bench.wr (12'h12, 32'h0);
+        test_bench.wr (12'h13, 32'h0);
+        test_bench.rd (test_bench.tcmp1, 32'hffff_ffff);
+
+        $display ("*****TIER*****");
+        test_bench.wr (12'h15, 32'hffff_ffff);
+        test_bench.wr (12'h16, 32'hffff_ffff);
+        test_bench.wr (12'h17, 32'hffff_ffff);
+        test_bench.rd (test_bench.tier, 32'h0);
+
+        $display ("*****TISR*****");
+        test_bench.wr (12'h19, 32'hffff_ffff);
+        test_bench.wr (12'h1a, 32'hffff_ffff);
+        test_bench.wr (12'h1b, 32'hffff_ffff);
+        test_bench.rd (test_bench.tisr, 32'h0);
+
+        $display ("*****THCSR*****");
+        test_bench.wr (12'h1d, 32'hffff_ffff);
+        test_bench.wr (12'h1e, 32'hffff_ffff);
+        test_bench.wr (12'h1f, 32'hffff_ffff);
+        test_bench.rd (test_bench.thcsr, 32'h0);
+    end
+endtask

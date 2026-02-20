@@ -1,0 +1,78 @@
+# vsim -debugDB -l one_hot_check.log -voptargs="+acc" -assertdebug -c test_bench -do "log -r /*;run -all;" 
+# Start time: 17:48:15 on Oct 02,2025
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Note: (vsim-8611) Generating debug db.
+# ** Warning: (vopt-10908) Some optimizations are turned off because the +acc switch is in effect.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# //  Questa Intel Starter FPGA Edition-64
+# //  Version 2024.3 linux_x86_64 Sep 10 2024
+# //
+# // Unpublished work. Copyright 2024 Siemens
+# //
+# // This material contains trade secrets or otherwise confidential information
+# // owned by Siemens Industry Software Inc. or its affiliates (collectively,
+# // "SISW"), or its licensors. Access to and use of this information is strictly
+# // limited as set forth in the Customer's applicable agreements with SISW.
+# //
+# // This material may not be copied, distributed, or otherwise disclosed outside
+# // of the Customer's facilities without the express written permission of SISW,
+# // and may not be used in any way not expressly authorized by SISW.
+# //
+# Loading work.test_bench(fast)
+# Loading work.timer_top(fast)
+# Loading work.apbif(fast)
+# Loading work.cnt_ctrl(fast)
+# Loading work.counter(fast)
+# Loading work.regset(fast)
+# ** Note: (vsim-8900) Creating design debug database vsim.dbg.
+# log -r /*
+# run -all
+# [WRITE] addr = 12'h000, wdata = 32'h22222222
+# [WRITE] addr = 12'h004, wdata = 32'h33333333
+# [WRITE] addr = 12'h008, wdata = 32'h44444444
+# [WRITE] addr = 12'h00c, wdata = 32'h55555555
+# [WRITE] addr = 12'h010, wdata = 32'h66666666
+# [WRITE] addr = 12'h014, wdata = 32'h77777777
+# [WRITE] addr = 12'h018, wdata = 32'h88888888
+# [WRITE] addr = 12'h01c, wdata = 32'ha55a5aa5
+# [READ]  addr = 12'h000, expected rdata = 32'h00000202
+# --------------------------------------------------------------------------
+# 	  [PASS] 	  output   rdata = 32'h00000202
+# --------------------------------------------------------------------------
+# [READ]  addr = 12'h004, expected rdata = 32'h33333333
+# --------------------------------------------------------------------------
+# 	  [PASS] 	  output   rdata = 32'h33333333
+# --------------------------------------------------------------------------
+# [READ]  addr = 12'h008, expected rdata = 32'h44444444
+# --------------------------------------------------------------------------
+# 	  [PASS] 	  output   rdata = 32'h44444444
+# --------------------------------------------------------------------------
+# [READ]  addr = 12'h00c, expected rdata = 32'h55555555
+# --------------------------------------------------------------------------
+# 	  [PASS] 	  output   rdata = 32'h55555555
+# --------------------------------------------------------------------------
+# [READ]  addr = 12'h010, expected rdata = 32'h66666666
+# --------------------------------------------------------------------------
+# 	  [PASS] 	  output   rdata = 32'h66666666
+# --------------------------------------------------------------------------
+# [READ]  addr = 12'h014, expected rdata = 32'h00000001
+# --------------------------------------------------------------------------
+# 	  [PASS] 	  output   rdata = 32'h00000001
+# --------------------------------------------------------------------------
+# [READ]  addr = 12'h018, expected rdata = 32'h00000000
+# --------------------------------------------------------------------------
+# 	  [PASS] 	  output   rdata = 32'h00000000
+# --------------------------------------------------------------------------
+# [READ]  addr = 12'h01c, expected rdata = 32'h00000003
+# --------------------------------------------------------------------------
+# 	  [PASS] 	  output   rdata = 32'h00000003
+# --------------------------------------------------------------------------
+# 	SUMMARY:
+# Total test cases run: 8
+# Passed              : 8
+# Failed              : 0
+# PASSED ALL TESTS
+# ** Note: $finish    : ../tb/test_bench.v(146)
+#    Time: 1491 ns  Iteration: 0  Instance: /test_bench
+# End time: 17:48:16 on Oct 02,2025, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 1

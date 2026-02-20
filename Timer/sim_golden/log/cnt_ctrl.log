@@ -1,0 +1,1853 @@
+# vsim -coverage -l cnt_ctrl.log -c test_bench -voptargs="+cover=bcesft" -assertdebug -do "coverage save -onexit cnt_ctrl.ucdb; log -r /*;run -all" 
+# Start time: 11:02:03 on Oct 06,2025
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# //  Questa Intel Starter FPGA Edition-64
+# //  Version 2024.3 linux_x86_64 Sep 10 2024
+# //
+# // Unpublished work. Copyright 2024 Siemens
+# //
+# // This material contains trade secrets or otherwise confidential information
+# // owned by Siemens Industry Software Inc. or its affiliates (collectively,
+# // "SISW"), or its licensors. Access to and use of this information is strictly
+# // limited as set forth in the Customer's applicable agreements with SISW.
+# //
+# // This material may not be copied, distributed, or otherwise disclosed outside
+# // of the Customer's facilities without the express written permission of SISW,
+# // and may not be used in any way not expressly authorized by SISW.
+# //
+# Loading work.test_bench(fast)
+# coverage save -onexit cnt_ctrl.ucdb
+#  log -r /*
+# run -all
+# dbg_mode is ON
+# ==========================================================================
+# 			DIV_EN = 0
+# ==========================================================================
+# ==========================================================================
+# 			CASE 1
+# ==========================================================================
+# --------------------------------------------------------------------------
+# t =        131 | [WRITE] addr = 12'h000, wdata = 32'h00000001
+# --------------------------------------------------------------------------
+# pready state when penable is first asserted:
+# t =        152 | [PASS]  pready is OFF
+# t =        171 | [PASS]  pslverr is OFF
+# pready state when transfer ended:
+# t =        192 | [PASS]  pready is OFF
+# 50 clock cycles have passed
+# --------------------------------------------------------------------------
+# t =       1211 | [WRITE] addr = 12'h01c, wdata = 32'h00000001
+# --------------------------------------------------------------------------
+# pready state when penable is first asserted:
+# t =       1232 | [PASS]  pready is OFF
+# pready state when transfer ended:
+# t =       1272 | [PASS]  pready is OFF
+# --------------------------------------------------------------------------
+# t =       1291 | [READ]  addr = 12'h004, exp rdata = 32'h00000036
+# --------------------------------------------------------------------------
+# pready state when penable is first asserted:
+# t =       1312 | [PASS]  pready is OFF
+# t =       1331 | [PASS]  output rdata = 32'h00000036
+# pready state when transfer ended:
+# t =       1352 | [PASS]  pready is OFF
+# --------------------------------------------------------------------------
+# t =       1371 | [READ]  addr = 12'h008, exp rdata = 32'h00000000
+# --------------------------------------------------------------------------
+# pready state when penable is first asserted:
+# t =       1392 | [PASS]  pready is OFF
+# t =       1411 | [PASS]  output rdata = 32'h00000000
+# pready state when transfer ended:
+# t =       1432 | [PASS]  pready is OFF
+# --------------------------------------------------------------------------
+# t =       1451 | [READ]  addr = 12'h01c, exp rdata = 32'h00000003
+# --------------------------------------------------------------------------
+# pready state when penable is first asserted:
+# t =       1472 | [PASS]  pready is OFF
+# t =       1491 | [PASS]  output rdata = 32'h00000003
+# pready state when transfer ended:
+# t =       1512 | [PASS]  pready is OFF
+# --------------------------------------------------------------------------
+# t =       1531 | [WRITE] addr = 12'h01c, wdata = 32'h00000000
+# --------------------------------------------------------------------------
+# pready state when penable is first asserted:
+# t =       1552 | [PASS]  pready is OFF
+# pready state when transfer ended:
+# t =       1592 | [PASS]  pready is OFF
+# --------------------------------------------------------------------------
+# t =       1611 | [READ]  addr = 12'h004, exp rdata = 32'h00000039
+# --------------------------------------------------------------------------
+# pready state when penable is first asserted:
+# t =       1632 | [PASS]  pready is OFF
+# t =       1651 | [PASS]  output rdata = 32'h00000039
+# pready state when transfer ended:
+# t =       1672 | [PASS]  pready is OFF
+# --------------------------------------------------------------------------
+# t =       1691 | [READ]  addr = 12'h008, exp rdata = 32'h00000000
+# --------------------------------------------------------------------------
+# pready state when penable is first asserted:
+# t =       1712 | [PASS]  pready is OFF
+# t =       1731 | [PASS]  output rdata = 32'h00000000
+# pready state when transfer ended:
+# t =       1752 | [PASS]  pready is OFF
+# ==========================================================================
+# 			CASE 2
+# ==========================================================================
+# --------------------------------------------------------------------------
+# t =       1771 | [WRITE] addr = 12'h000, wdata = 32'h00000000
+# --------------------------------------------------------------------------
+# pready state when penable is first asserted:
+# t =       1792 | [PASS]  pready is OFF
+# t =       1811 | [PASS]  pslverr is OFF
+# pready state when transfer ended:
+# t =       1832 | [PASS]  pready is OFF
+# --------------------------------------------------------------------------
+# t =       1851 | [WRITE] addr = 12'h004, wdata = 32'h000001f4
+# --------------------------------------------------------------------------
+# pready state when penable is first asserted:
+# t =       1872 | [PASS]  pready is OFF
+# pready state when transfer ended:
+# t =       1912 | [PASS]  pready is OFF
+# --------------------------------------------------------------------------
+# t =       1931 | [WRITE] addr = 12'h008, wdata = 32'h00000000
+# --------------------------------------------------------------------------
+# pready state when penable is first asserted:
+# t =       1952 | [PASS]  pready is OFF
+# pready state when transfer ended:
+# t =       1992 | [PASS]  pready is OFF
+# --------------------------------------------------------------------------
+# t =       2011 | [WRITE] addr = 12'h000, wdata = 32'h00000001
+# --------------------------------------------------------------------------
+# pready state when penable is first asserted:
+# t =       2032 | [PASS]  pready is OFF
+# t =       2051 | [PASS]  pslverr is OFF
+# pready state when transfer ended:
+# t =       2072 | [PASS]  pready is OFF
+# 120 clock cycles have passed
+# --------------------------------------------------------------------------
+# t =       4491 | [WRITE] addr = 12'h01c, wdata = 32'h00000001
+# --------------------------------------------------------------------------
+# pready state when penable is first asserted:
+# t =       4512 | [PASS]  pready is OFF
+# pready state when transfer ended:
+# t =       4552 | [PASS]  pready is OFF
+# --------------------------------------------------------------------------
+# t =       4571 | [READ]  addr = 12'h004, exp rdata = 32'h00000270
+# --------------------------------------------------------------------------
+# pready state when penable is first asserted:
+# t =       4592 | [PASS]  pready is OFF
+# t =       4611 | [PASS]  output rdata = 32'h00000270
+# pready state when transfer ended:
+# t =       4632 | [PASS]  pready is OFF
+# --------------------------------------------------------------------------
+# t =       4651 | [READ]  addr = 12'h008, exp rdata = 32'h00000000
+# --------------------------------------------------------------------------
+# pready state when penable is first asserted:
+# t =       4672 | [PASS]  pready is OFF
+# t =       4691 | [PASS]  output rdata = 32'h00000000
+# pready state when transfer ended:
+# t =       4712 | [PASS]  pready is OFF
+# --------------------------------------------------------------------------
+# t =       4731 | [READ]  addr = 12'h01c, exp rdata = 32'h00000003
+# --------------------------------------------------------------------------
+# pready state when penable is first asserted:
+# t =       4752 | [PASS]  pready is OFF
+# t =       4771 | [PASS]  output rdata = 32'h00000003
+# pready state when transfer ended:
+# t =       4792 | [PASS]  pready is OFF
+# --------------------------------------------------------------------------
+# t =       4811 | [WRITE] addr = 12'h01c, wdata = 32'h00000000
+# --------------------------------------------------------------------------
+# pready state when penable is first asserted:
+# t =       4832 | [PASS]  pready is OFF
+# pready state when transfer ended:
+# t =       4872 | [PASS]  pready is OFF
+# --------------------------------------------------------------------------
+# t =       4891 | [READ]  addr = 12'h004, exp rdata = 32'h00000273
+# --------------------------------------------------------------------------
+# pready state when penable is first asserted:
+# t =       4912 | [PASS]  pready is OFF
+# t =       4931 | [PASS]  output rdata = 32'h00000273
+# pready state when transfer ended:
+# t =       4952 | [PASS]  pready is OFF
+# --------------------------------------------------------------------------
+# t =       4971 | [READ]  addr = 12'h008, exp rdata = 32'h00000000
+# --------------------------------------------------------------------------
+# pready state when penable is first asserted:
+# t =       4992 | [PASS]  pready is OFF
+# t =       5011 | [PASS]  output rdata = 32'h00000000
+# pready state when transfer ended:
+# t =       5032 | [PASS]  pready is OFF
+# ==========================================================================
+# 			DIV_EN = 1, DIV_VAL = 0
+# ==========================================================================
+# ==========================================================================
+# 			CASE 1
+# ==========================================================================
+# --------------------------------------------------------------------------
+# t =       5051 | [WRITE] addr = 12'h000, wdata = 32'h00000000
+# --------------------------------------------------------------------------
+# pready state when penable is first asserted:
+# t =       5072 | [PASS]  pready is OFF
+# t =       5091 | [PASS]  pslverr is OFF
+# pready state when transfer ended:
+# t =       5112 | [PASS]  pready is OFF
+# --------------------------------------------------------------------------
+# t =       5131 | [WRITE] addr = 12'h000, wdata = 32'h00000003
+# --------------------------------------------------------------------------
+# pready state when penable is first asserted:
+# t =       5152 | [PASS]  pready is OFF
+# t =       5171 | [PASS]  pslverr is OFF
+# pready state when transfer ended:
+# t =       5192 | [PASS]  pready is OFF
+# 629 clock cycles have passed
+# --------------------------------------------------------------------------
+# t =      17791 | [WRITE] addr = 12'h01c, wdata = 32'h00000001
+# --------------------------------------------------------------------------
+# pready state when penable is first asserted:
+# t =      17812 | [PASS]  pready is OFF
+# pready state when transfer ended:
+# t =      17852 | [PASS]  pready is OFF
+# --------------------------------------------------------------------------
+# t =      17871 | [READ]  addr = 12'h004, exp rdata = 32'h00000279
+# --------------------------------------------------------------------------
+# pready state when penable is first asserted:
+# t =      17892 | [PASS]  pready is OFF
+# t =      17911 | [PASS]  output rdata = 32'h00000279
+# pready state when transfer ended:
+# t =      17932 | [PASS]  pready is OFF
+# --------------------------------------------------------------------------
+# t =      17951 | [READ]  addr = 12'h008, exp rdata = 32'h00000000
+# --------------------------------------------------------------------------
+# pready state when penable is first asserted:
+# t =      17972 | [PASS]  pready is OFF
+# t =      17991 | [PASS]  output rdata = 32'h00000000
+# pready state when transfer ended:
+# t =      18012 | [PASS]  pready is OFF
+# --------------------------------------------------------------------------
+# t =      18031 | [READ]  addr = 12'h01c, exp rdata = 32'h00000003
+# --------------------------------------------------------------------------
+# pready state when penable is first asserted:
+# t =      18052 | [PASS]  pready is OFF
+# t =      18071 | [PASS]  output rdata = 32'h00000003
+# pready state when transfer ended:
+# t =      18092 | [PASS]  pready is OFF
+# --------------------------------------------------------------------------
+# t =      18111 | [WRITE] addr = 12'h01c, wdata = 32'h00000000
+# --------------------------------------------------------------------------
+# pready state when penable is first asserted:
+# t =      18132 | [PASS]  pready is OFF
+# pready state when transfer ended:
+# t =      18172 | [PASS]  pready is OFF
+# --------------------------------------------------------------------------
+# t =      18191 | [READ]  addr = 12'h004, exp rdata = 32'h0000027c
+# --------------------------------------------------------------------------
+# pready state when penable is first asserted:
+# t =      18212 | [PASS]  pready is OFF
+# t =      18231 | [PASS]  output rdata = 32'h0000027c
+# pready state when transfer ended:
+# t =      18252 | [PASS]  pready is OFF
+# --------------------------------------------------------------------------
+# t =      18271 | [READ]  addr = 12'h008, exp rdata = 32'h00000000
+# --------------------------------------------------------------------------
+# pready state when penable is first asserted:
+# t =      18292 | [PASS]  pready is OFF
+# t =      18311 | [PASS]  output rdata = 32'h00000000
+# pready state when transfer ended:
+# t =      18332 | [PASS]  pready is OFF
+# ==========================================================================
+# 			CASE 2
+# ==========================================================================
+# --------------------------------------------------------------------------
+# t =      18351 | [WRITE] addr = 12'h000, wdata = 32'h00000002
+# --------------------------------------------------------------------------
+# pready state when penable is first asserted:
+# t =      18372 | [PASS]  pready is OFF
+# t =      18391 | [PASS]  pslverr is OFF
+# pready state when transfer ended:
+# t =      18412 | [PASS]  pready is OFF
+# --------------------------------------------------------------------------
+# t =      18431 | [WRITE] addr = 12'h004, wdata = 32'hffffff56
+# --------------------------------------------------------------------------
+# pready state when penable is first asserted:
+# t =      18452 | [PASS]  pready is OFF
+# pready state when transfer ended:
+# t =      18492 | [PASS]  pready is OFF
+# --------------------------------------------------------------------------
+# t =      18511 | [WRITE] addr = 12'h008, wdata = 32'hffffffff
+# --------------------------------------------------------------------------
+# pready state when penable is first asserted:
+# t =      18532 | [PASS]  pready is OFF
+# pready state when transfer ended:
+# t =      18572 | [PASS]  pready is OFF
+# --------------------------------------------------------------------------
+# t =      18591 | [WRITE] addr = 12'h000, wdata = 32'h00000003
+# --------------------------------------------------------------------------
+# pready state when penable is first asserted:
+# t =      18612 | [PASS]  pready is OFF
+# t =      18631 | [PASS]  pslverr is OFF
+# pready state when transfer ended:
+# t =      18652 | [PASS]  pready is OFF
+# 20 clock cycles have passed
+# --------------------------------------------------------------------------
+# t =      19071 | [WRITE] addr = 12'h01c, wdata = 32'h00000001
+# --------------------------------------------------------------------------
+# pready state when penable is first asserted:
+# t =      19092 | [PASS]  pready is OFF
+# pready state when transfer ended:
+# t =      19132 | [PASS]  pready is OFF
+# --------------------------------------------------------------------------
+# t =      19151 | [WRITE] addr = 12'h004, wdata = 32'hffffff6e
+# --------------------------------------------------------------------------
+# pready state when penable is first asserted:
+# t =      19172 | [PASS]  pready is OFF
+# pready state when transfer ended:
+# t =      19212 | [PASS]  pready is OFF
+# --------------------------------------------------------------------------
+# t =      19231 | [WRITE] addr = 12'h008, wdata = 32'hffffffff
+# --------------------------------------------------------------------------
+# pready state when penable is first asserted:
+# t =      19252 | [PASS]  pready is OFF
+# pready state when transfer ended:
+# t =      19292 | [PASS]  pready is OFF
+# --------------------------------------------------------------------------
+# t =      19311 | [READ]  addr = 12'h01c, exp rdata = 32'h00000003
+# --------------------------------------------------------------------------
+# pready state when penable is first asserted:
+# t =      19332 | [PASS]  pready is OFF
+# t =      19351 | [PASS]  output rdata = 32'h00000003
+# pready state when transfer ended:
+# t =      19372 | [PASS]  pready is OFF
+# --------------------------------------------------------------------------
+# t =      19391 | [WRITE] addr = 12'h01c, wdata = 32'h00000000
+# --------------------------------------------------------------------------
+# pready state when penable is first asserted:
+# t =      19412 | [PASS]  pready is OFF
+# pready state when transfer ended:
+# t =      19452 | [PASS]  pready is OFF
+# --------------------------------------------------------------------------
+# t =      19471 | [READ]  addr = 12'h004, exp rdata = 32'hffffff71
+# --------------------------------------------------------------------------
+# pready state when penable is first asserted:
+# t =      19492 | [PASS]  pready is OFF
+# t =      19511 | [PASS]  output rdata = 32'hffffff71
+# pready state when transfer ended:
+# t =      19532 | [PASS]  pready is OFF
+# --------------------------------------------------------------------------
+# t =      19551 | [READ]  addr = 12'h008, exp rdata = 32'hffffffff
+# --------------------------------------------------------------------------
+# pready state when penable is first asserted:
+# t =      19572 | [PASS]  pready is OFF
+# t =      19591 | [PASS]  output rdata = 32'hffffffff
+# pready state when transfer ended:
+# t =      19612 | [PASS]  pready is OFF
+# ==========================================================================
+# 			DIV_EN = 1, DIV_VAL = 1
+# ==========================================================================
+# ==========================================================================
+# 			CASE 1
+# ==========================================================================
+# --------------------------------------------------------------------------
+# t =      19631 | [WRITE] addr = 12'h000, wdata = 32'h00000002
+# --------------------------------------------------------------------------
+# pready state when penable is first asserted:
+# t =      19652 | [PASS]  pready is OFF
+# t =      19671 | [PASS]  pslverr is OFF
+# pready state when transfer ended:
+# t =      19692 | [PASS]  pready is OFF
+# --------------------------------------------------------------------------
+# t =      19711 | [WRITE] addr = 12'h000, wdata = 32'h00000103
+# --------------------------------------------------------------------------
+# pready state when penable is first asserted:
+# t =      19732 | [PASS]  pready is OFF
+# t =      19751 | [PASS]  pslverr is OFF
+# pready state when transfer ended:
+# t =      19772 | [PASS]  pready is OFF
+# 615 clock cycles have passed
+# --------------------------------------------------------------------------
+# t =      32091 | [WRITE] addr = 12'h01c, wdata = 32'h00000001
+# --------------------------------------------------------------------------
+# pready state when penable is first asserted:
+# t =      32112 | [PASS]  pready is OFF
+# pready state when transfer ended:
+# t =      32152 | [PASS]  pready is OFF
+# --------------------------------------------------------------------------
+# t =      32171 | [READ]  addr = 12'h004, exp rdata = 32'h00000135
+# --------------------------------------------------------------------------
+# pready state when penable is first asserted:
+# t =      32192 | [PASS]  pready is OFF
+# t =      32211 | [PASS]  output rdata = 32'h00000135
+# pready state when transfer ended:
+# t =      32232 | [PASS]  pready is OFF
+# --------------------------------------------------------------------------
+# t =      32251 | [READ]  addr = 12'h008, exp rdata = 32'h00000000
+# --------------------------------------------------------------------------
+# pready state when penable is first asserted:
+# t =      32272 | [PASS]  pready is OFF
+# t =      32291 | [PASS]  output rdata = 32'h00000000
+# pready state when transfer ended:
+# t =      32312 | [PASS]  pready is OFF
+# --------------------------------------------------------------------------
+# t =      32331 | [READ]  addr = 12'h01c, exp rdata = 32'h00000003
+# --------------------------------------------------------------------------
+# pready state when penable is first asserted:
+# t =      32352 | [PASS]  pready is OFF
+# t =      32371 | [PASS]  output rdata = 32'h00000003
+# pready state when transfer ended:
+# t =      32392 | [PASS]  pready is OFF
+# --------------------------------------------------------------------------
+# t =      32411 | [WRITE] addr = 12'h01c, wdata = 32'h00000000
+# --------------------------------------------------------------------------
+# pready state when penable is first asserted:
+# t =      32432 | [PASS]  pready is OFF
+# pready state when transfer ended:
+# t =      32472 | [PASS]  pready is OFF
+# --------------------------------------------------------------------------
+# t =      32491 | [READ]  addr = 12'h004, exp rdata = 32'h00000137
+# --------------------------------------------------------------------------
+# pready state when penable is first asserted:
+# t =      32512 | [PASS]  pready is OFF
+# t =      32531 | [PASS]  output rdata = 32'h00000137
+# pready state when transfer ended:
+# t =      32552 | [PASS]  pready is OFF
+# --------------------------------------------------------------------------
+# t =      32571 | [READ]  addr = 12'h008, exp rdata = 32'h00000000
+# --------------------------------------------------------------------------
+# pready state when penable is first asserted:
+# t =      32592 | [PASS]  pready is OFF
+# t =      32611 | [PASS]  output rdata = 32'h00000000
+# pready state when transfer ended:
+# t =      32632 | [PASS]  pready is OFF
+# ==========================================================================
+# 			CASE 2
+# ==========================================================================
+# --------------------------------------------------------------------------
+# t =      32651 | [WRITE] addr = 12'h000, wdata = 32'h00000102
+# --------------------------------------------------------------------------
+# pready state when penable is first asserted:
+# t =      32672 | [PASS]  pready is OFF
+# t =      32691 | [PASS]  pslverr is OFF
+# pready state when transfer ended:
+# t =      32712 | [PASS]  pready is OFF
+# --------------------------------------------------------------------------
+# t =      32731 | [WRITE] addr = 12'h004, wdata = 32'habcdef98
+# --------------------------------------------------------------------------
+# pready state when penable is first asserted:
+# t =      32752 | [PASS]  pready is OFF
+# pready state when transfer ended:
+# t =      32792 | [PASS]  pready is OFF
+# --------------------------------------------------------------------------
+# t =      32811 | [WRITE] addr = 12'h008, wdata = 32'hef98ffff
+# --------------------------------------------------------------------------
+# pready state when penable is first asserted:
+# t =      32832 | [PASS]  pready is OFF
+# pready state when transfer ended:
+# t =      32872 | [PASS]  pready is OFF
+# --------------------------------------------------------------------------
+# t =      32891 | [WRITE] addr = 12'h000, wdata = 32'h00000103
+# --------------------------------------------------------------------------
+# pready state when penable is first asserted:
+# t =      32912 | [PASS]  pready is OFF
+# t =      32931 | [PASS]  pslverr is OFF
+# pready state when transfer ended:
+# t =      32952 | [PASS]  pready is OFF
+# 65 clock cycles have passed
+# --------------------------------------------------------------------------
+# t =      34271 | [WRITE] addr = 12'h01c, wdata = 32'h00000001
+# --------------------------------------------------------------------------
+# pready state when penable is first asserted:
+# t =      34292 | [PASS]  pready is OFF
+# pready state when transfer ended:
+# t =      34332 | [PASS]  pready is OFF
+# --------------------------------------------------------------------------
+# t =      34351 | [READ]  addr = 12'h004, exp rdata = 32'habcdefba
+# --------------------------------------------------------------------------
+# pready state when penable is first asserted:
+# t =      34372 | [PASS]  pready is OFF
+# t =      34391 | [PASS]  output rdata = 32'habcdefba
+# pready state when transfer ended:
+# t =      34412 | [PASS]  pready is OFF
+# --------------------------------------------------------------------------
+# t =      34431 | [READ]  addr = 12'h008, exp rdata = 32'hef98ffff
+# --------------------------------------------------------------------------
+# pready state when penable is first asserted:
+# t =      34452 | [PASS]  pready is OFF
+# t =      34471 | [PASS]  output rdata = 32'hef98ffff
+# pready state when transfer ended:
+# t =      34492 | [PASS]  pready is OFF
+# --------------------------------------------------------------------------
+# t =      34511 | [READ]  addr = 12'h01c, exp rdata = 32'h00000003
+# --------------------------------------------------------------------------
+# pready state when penable is first asserted:
+# t =      34532 | [PASS]  pready is OFF
+# t =      34551 | [PASS]  output rdata = 32'h00000003
+# pready state when transfer ended:
+# t =      34572 | [PASS]  pready is OFF
+# --------------------------------------------------------------------------
+# t =      34591 | [WRITE] addr = 12'h01c, wdata = 32'h00000000
+# --------------------------------------------------------------------------
+# pready state when penable is first asserted:
+# t =      34612 | [PASS]  pready is OFF
+# pready state when transfer ended:
+# t =      34652 | [PASS]  pready is OFF
+# --------------------------------------------------------------------------
+# t =      34671 | [READ]  addr = 12'h004, exp rdata = 32'habcdefbc
+# --------------------------------------------------------------------------
+# pready state when penable is first asserted:
+# t =      34692 | [PASS]  pready is OFF
+# t =      34711 | [PASS]  output rdata = 32'habcdefbc
+# pready state when transfer ended:
+# t =      34732 | [PASS]  pready is OFF
+# --------------------------------------------------------------------------
+# t =      34751 | [READ]  addr = 12'h008, exp rdata = 32'hef98ffff
+# --------------------------------------------------------------------------
+# pready state when penable is first asserted:
+# t =      34772 | [PASS]  pready is OFF
+# t =      34791 | [PASS]  output rdata = 32'hef98ffff
+# pready state when transfer ended:
+# t =      34812 | [PASS]  pready is OFF
+# ==========================================================================
+# 			DIV_EN = 1, DIV_VAL = 2
+# ==========================================================================
+# ==========================================================================
+# 			CASE 1
+# ==========================================================================
+# --------------------------------------------------------------------------
+# t =      34831 | [WRITE] addr = 12'h000, wdata = 32'h00000102
+# --------------------------------------------------------------------------
+# pready state when penable is first asserted:
+# t =      34852 | [PASS]  pready is OFF
+# t =      34871 | [PASS]  pslverr is OFF
+# pready state when transfer ended:
+# t =      34892 | [PASS]  pready is OFF
+# --------------------------------------------------------------------------
+# t =      34911 | [WRITE] addr = 12'h000, wdata = 32'h00000203
+# --------------------------------------------------------------------------
+# pready state when penable is first asserted:
+# t =      34932 | [PASS]  pready is OFF
+# t =      34951 | [PASS]  pslverr is OFF
+# pready state when transfer ended:
+# t =      34972 | [PASS]  pready is OFF
+# 80 clock cycles have passed
+# --------------------------------------------------------------------------
+# t =      36591 | [WRITE] addr = 12'h01c, wdata = 32'h00000001
+# --------------------------------------------------------------------------
+# pready state when penable is first asserted:
+# t =      36612 | [PASS]  pready is OFF
+# pready state when transfer ended:
+# t =      36652 | [PASS]  pready is OFF
+# --------------------------------------------------------------------------
+# t =      36671 | [READ]  addr = 12'h004, exp rdata = 32'h00000015
+# --------------------------------------------------------------------------
+# pready state when penable is first asserted:
+# t =      36692 | [PASS]  pready is OFF
+# t =      36711 | [PASS]  output rdata = 32'h00000015
+# pready state when transfer ended:
+# t =      36732 | [PASS]  pready is OFF
+# --------------------------------------------------------------------------
+# t =      36751 | [READ]  addr = 12'h008, exp rdata = 32'h00000000
+# --------------------------------------------------------------------------
+# pready state when penable is first asserted:
+# t =      36772 | [PASS]  pready is OFF
+# t =      36791 | [PASS]  output rdata = 32'h00000000
+# pready state when transfer ended:
+# t =      36812 | [PASS]  pready is OFF
+# --------------------------------------------------------------------------
+# t =      36831 | [READ]  addr = 12'h01c, exp rdata = 32'h00000003
+# --------------------------------------------------------------------------
+# pready state when penable is first asserted:
+# t =      36852 | [PASS]  pready is OFF
+# t =      36871 | [PASS]  output rdata = 32'h00000003
+# pready state when transfer ended:
+# t =      36892 | [PASS]  pready is OFF
+# --------------------------------------------------------------------------
+# t =      36911 | [WRITE] addr = 12'h01c, wdata = 32'h00000000
+# --------------------------------------------------------------------------
+# pready state when penable is first asserted:
+# t =      36932 | [PASS]  pready is OFF
+# pready state when transfer ended:
+# t =      36972 | [PASS]  pready is OFF
+# --------------------------------------------------------------------------
+# t =      36991 | [READ]  addr = 12'h004, exp rdata = 32'h00000015
+# --------------------------------------------------------------------------
+# pready state when penable is first asserted:
+# t =      37012 | [PASS]  pready is OFF
+# t =      37031 | [PASS]  output rdata = 32'h00000015
+# pready state when transfer ended:
+# t =      37052 | [PASS]  pready is OFF
+# --------------------------------------------------------------------------
+# t =      37071 | [READ]  addr = 12'h008, exp rdata = 32'h00000000
+# --------------------------------------------------------------------------
+# pready state when penable is first asserted:
+# t =      37092 | [PASS]  pready is OFF
+# t =      37111 | [PASS]  output rdata = 32'h00000000
+# pready state when transfer ended:
+# t =      37132 | [PASS]  pready is OFF
+# ==========================================================================
+# 			CASE 2
+# ==========================================================================
+# --------------------------------------------------------------------------
+# t =      37151 | [WRITE] addr = 12'h000, wdata = 32'h00000202
+# --------------------------------------------------------------------------
+# pready state when penable is first asserted:
+# t =      37172 | [PASS]  pready is OFF
+# t =      37191 | [PASS]  pslverr is OFF
+# pready state when transfer ended:
+# t =      37212 | [PASS]  pready is OFF
+# --------------------------------------------------------------------------
+# t =      37231 | [WRITE] addr = 12'h004, wdata = 32'h98765432
+# --------------------------------------------------------------------------
+# pready state when penable is first asserted:
+# t =      37252 | [PASS]  pready is OFF
+# pready state when transfer ended:
+# t =      37292 | [PASS]  pready is OFF
+# --------------------------------------------------------------------------
+# t =      37311 | [WRITE] addr = 12'h008, wdata = 32'h12345678
+# --------------------------------------------------------------------------
+# pready state when penable is first asserted:
+# t =      37332 | [PASS]  pready is OFF
+# pready state when transfer ended:
+# t =      37372 | [PASS]  pready is OFF
+# --------------------------------------------------------------------------
+# t =      37391 | [WRITE] addr = 12'h000, wdata = 32'h00000203
+# --------------------------------------------------------------------------
+# pready state when penable is first asserted:
+# t =      37412 | [PASS]  pready is OFF
+# t =      37431 | [PASS]  pslverr is OFF
+# pready state when transfer ended:
+# t =      37452 | [PASS]  pready is OFF
+# 780 clock cycles have passed
+# --------------------------------------------------------------------------
+# t =      53071 | [WRITE] addr = 12'h01c, wdata = 32'h00000001
+# --------------------------------------------------------------------------
+# pready state when penable is first asserted:
+# t =      53092 | [PASS]  pready is OFF
+# pready state when transfer ended:
+# t =      53132 | [PASS]  pready is OFF
+# --------------------------------------------------------------------------
+# t =      53151 | [READ]  addr = 12'h004, exp rdata = 32'h987654f6
+# --------------------------------------------------------------------------
+# pready state when penable is first asserted:
+# t =      53172 | [PASS]  pready is OFF
+# t =      53191 | [PASS]  output rdata = 32'h987654f6
+# pready state when transfer ended:
+# t =      53212 | [PASS]  pready is OFF
+# --------------------------------------------------------------------------
+# t =      53231 | [READ]  addr = 12'h008, exp rdata = 32'h12345678
+# --------------------------------------------------------------------------
+# pready state when penable is first asserted:
+# t =      53252 | [PASS]  pready is OFF
+# t =      53271 | [PASS]  output rdata = 32'h12345678
+# pready state when transfer ended:
+# t =      53292 | [PASS]  pready is OFF
+# --------------------------------------------------------------------------
+# t =      53311 | [READ]  addr = 12'h01c, exp rdata = 32'h00000003
+# --------------------------------------------------------------------------
+# pready state when penable is first asserted:
+# t =      53332 | [PASS]  pready is OFF
+# t =      53351 | [PASS]  output rdata = 32'h00000003
+# pready state when transfer ended:
+# t =      53372 | [PASS]  pready is OFF
+# --------------------------------------------------------------------------
+# t =      53391 | [WRITE] addr = 12'h01c, wdata = 32'h00000000
+# --------------------------------------------------------------------------
+# pready state when penable is first asserted:
+# t =      53412 | [PASS]  pready is OFF
+# pready state when transfer ended:
+# t =      53452 | [PASS]  pready is OFF
+# 3 clock cycles have passed
+# --------------------------------------------------------------------------
+# t =      53531 | [READ]  addr = 12'h004, exp rdata = 32'h987654f7
+# --------------------------------------------------------------------------
+# pready state when penable is first asserted:
+# t =      53552 | [PASS]  pready is OFF
+# t =      53571 | [PASS]  output rdata = 32'h987654f7
+# pready state when transfer ended:
+# t =      53592 | [PASS]  pready is OFF
+# --------------------------------------------------------------------------
+# t =      53611 | [READ]  addr = 12'h008, exp rdata = 32'h12345678
+# --------------------------------------------------------------------------
+# pready state when penable is first asserted:
+# t =      53632 | [PASS]  pready is OFF
+# t =      53651 | [PASS]  output rdata = 32'h12345678
+# pready state when transfer ended:
+# t =      53672 | [PASS]  pready is OFF
+# ==========================================================================
+# 			DIV_EN = 1, DIV_VAL = 3
+# ==========================================================================
+# ==========================================================================
+# 			CASE 1
+# ==========================================================================
+# --------------------------------------------------------------------------
+# t =      53691 | [WRITE] addr = 12'h000, wdata = 32'h00000202
+# --------------------------------------------------------------------------
+# pready state when penable is first asserted:
+# t =      53712 | [PASS]  pready is OFF
+# t =      53731 | [PASS]  pslverr is OFF
+# pready state when transfer ended:
+# t =      53752 | [PASS]  pready is OFF
+# --------------------------------------------------------------------------
+# t =      53771 | [WRITE] addr = 12'h000, wdata = 32'h00000303
+# --------------------------------------------------------------------------
+# pready state when penable is first asserted:
+# t =      53792 | [PASS]  pready is OFF
+# t =      53811 | [PASS]  pslverr is OFF
+# pready state when transfer ended:
+# t =      53832 | [PASS]  pready is OFF
+# 950 clock cycles have passed
+# --------------------------------------------------------------------------
+# t =      72851 | [WRITE] addr = 12'h01c, wdata = 32'h00000001
+# --------------------------------------------------------------------------
+# pready state when penable is first asserted:
+# t =      72872 | [PASS]  pready is OFF
+# pready state when transfer ended:
+# t =      72912 | [PASS]  pready is OFF
+# --------------------------------------------------------------------------
+# t =      72931 | [READ]  addr = 12'h004, exp rdata = 32'h00000077
+# --------------------------------------------------------------------------
+# pready state when penable is first asserted:
+# t =      72952 | [PASS]  pready is OFF
+# t =      72971 | [PASS]  output rdata = 32'h00000077
+# pready state when transfer ended:
+# t =      72992 | [PASS]  pready is OFF
+# --------------------------------------------------------------------------
+# t =      73011 | [READ]  addr = 12'h008, exp rdata = 32'h00000000
+# --------------------------------------------------------------------------
+# pready state when penable is first asserted:
+# t =      73032 | [PASS]  pready is OFF
+# t =      73051 | [PASS]  output rdata = 32'h00000000
+# pready state when transfer ended:
+# t =      73072 | [PASS]  pready is OFF
+# --------------------------------------------------------------------------
+# t =      73091 | [READ]  addr = 12'h01c, exp rdata = 32'h00000003
+# --------------------------------------------------------------------------
+# pready state when penable is first asserted:
+# t =      73112 | [PASS]  pready is OFF
+# t =      73131 | [PASS]  output rdata = 32'h00000003
+# pready state when transfer ended:
+# t =      73152 | [PASS]  pready is OFF
+# --------------------------------------------------------------------------
+# t =      73171 | [WRITE] addr = 12'h01c, wdata = 32'h00000000
+# --------------------------------------------------------------------------
+# pready state when penable is first asserted:
+# t =      73192 | [PASS]  pready is OFF
+# pready state when transfer ended:
+# t =      73232 | [PASS]  pready is OFF
+# 10 clock cycles have passed
+# --------------------------------------------------------------------------
+# t =      73451 | [READ]  addr = 12'h004, exp rdata = 32'h00000078
+# --------------------------------------------------------------------------
+# pready state when penable is first asserted:
+# t =      73472 | [PASS]  pready is OFF
+# t =      73491 | [PASS]  output rdata = 32'h00000078
+# pready state when transfer ended:
+# t =      73512 | [PASS]  pready is OFF
+# --------------------------------------------------------------------------
+# t =      73531 | [READ]  addr = 12'h008, exp rdata = 32'h00000000
+# --------------------------------------------------------------------------
+# pready state when penable is first asserted:
+# t =      73552 | [PASS]  pready is OFF
+# t =      73571 | [PASS]  output rdata = 32'h00000000
+# pready state when transfer ended:
+# t =      73592 | [PASS]  pready is OFF
+# ==========================================================================
+# 			CASE 2
+# ==========================================================================
+# --------------------------------------------------------------------------
+# t =      73611 | [WRITE] addr = 12'h000, wdata = 32'h00000302
+# --------------------------------------------------------------------------
+# pready state when penable is first asserted:
+# t =      73632 | [PASS]  pready is OFF
+# t =      73651 | [PASS]  pslverr is OFF
+# pready state when transfer ended:
+# t =      73672 | [PASS]  pready is OFF
+# --------------------------------------------------------------------------
+# t =      73691 | [WRITE] addr = 12'h004, wdata = 32'h5555aaaa
+# --------------------------------------------------------------------------
+# pready state when penable is first asserted:
+# t =      73712 | [PASS]  pready is OFF
+# pready state when transfer ended:
+# t =      73752 | [PASS]  pready is OFF
+# --------------------------------------------------------------------------
+# t =      73771 | [WRITE] addr = 12'h008, wdata = 32'haaaa5555
+# --------------------------------------------------------------------------
+# pready state when penable is first asserted:
+# t =      73792 | [PASS]  pready is OFF
+# pready state when transfer ended:
+# t =      73832 | [PASS]  pready is OFF
+# --------------------------------------------------------------------------
+# t =      73851 | [WRITE] addr = 12'h000, wdata = 32'h00000303
+# --------------------------------------------------------------------------
+# pready state when penable is first asserted:
+# t =      73872 | [PASS]  pready is OFF
+# t =      73891 | [PASS]  pslverr is OFF
+# pready state when transfer ended:
+# t =      73912 | [PASS]  pready is OFF
+# 33 clock cycles have passed
+# --------------------------------------------------------------------------
+# t =      74591 | [WRITE] addr = 12'h01c, wdata = 32'h00000001
+# --------------------------------------------------------------------------
+# pready state when penable is first asserted:
+# t =      74612 | [PASS]  pready is OFF
+# pready state when transfer ended:
+# t =      74652 | [PASS]  pready is OFF
+# --------------------------------------------------------------------------
+# t =      74671 | [READ]  addr = 12'h004, exp rdata = 32'h5555aaae
+# --------------------------------------------------------------------------
+# pready state when penable is first asserted:
+# t =      74692 | [PASS]  pready is OFF
+# t =      74711 | [PASS]  output rdata = 32'h5555aaae
+# pready state when transfer ended:
+# t =      74732 | [PASS]  pready is OFF
+# --------------------------------------------------------------------------
+# t =      74751 | [READ]  addr = 12'h008, exp rdata = 32'haaaa5555
+# --------------------------------------------------------------------------
+# pready state when penable is first asserted:
+# t =      74772 | [PASS]  pready is OFF
+# t =      74791 | [PASS]  output rdata = 32'haaaa5555
+# pready state when transfer ended:
+# t =      74812 | [PASS]  pready is OFF
+# --------------------------------------------------------------------------
+# t =      74831 | [READ]  addr = 12'h01c, exp rdata = 32'h00000003
+# --------------------------------------------------------------------------
+# pready state when penable is first asserted:
+# t =      74852 | [PASS]  pready is OFF
+# t =      74871 | [PASS]  output rdata = 32'h00000003
+# pready state when transfer ended:
+# t =      74892 | [PASS]  pready is OFF
+# --------------------------------------------------------------------------
+# t =      74911 | [WRITE] addr = 12'h01c, wdata = 32'h00000000
+# --------------------------------------------------------------------------
+# pready state when penable is first asserted:
+# t =      74932 | [PASS]  pready is OFF
+# pready state when transfer ended:
+# t =      74972 | [PASS]  pready is OFF
+# 22 clock cycles have passed
+# --------------------------------------------------------------------------
+# t =      75431 | [READ]  addr = 12'h004, exp rdata = 32'h5555aab1
+# --------------------------------------------------------------------------
+# pready state when penable is first asserted:
+# t =      75452 | [PASS]  pready is OFF
+# t =      75471 | [PASS]  output rdata = 32'h5555aab1
+# pready state when transfer ended:
+# t =      75492 | [PASS]  pready is OFF
+# --------------------------------------------------------------------------
+# t =      75511 | [READ]  addr = 12'h008, exp rdata = 32'haaaa5555
+# --------------------------------------------------------------------------
+# pready state when penable is first asserted:
+# t =      75532 | [PASS]  pready is OFF
+# t =      75551 | [PASS]  output rdata = 32'haaaa5555
+# pready state when transfer ended:
+# t =      75572 | [PASS]  pready is OFF
+# ==========================================================================
+# 			DIV_EN = 1, DIV_VAL = 4
+# ==========================================================================
+# ==========================================================================
+# 			CASE 1
+# ==========================================================================
+# --------------------------------------------------------------------------
+# t =      75591 | [WRITE] addr = 12'h000, wdata = 32'h00000302
+# --------------------------------------------------------------------------
+# pready state when penable is first asserted:
+# t =      75612 | [PASS]  pready is OFF
+# t =      75631 | [PASS]  pslverr is OFF
+# pready state when transfer ended:
+# t =      75652 | [PASS]  pready is OFF
+# --------------------------------------------------------------------------
+# t =      75671 | [WRITE] addr = 12'h000, wdata = 32'h00000403
+# --------------------------------------------------------------------------
+# pready state when penable is first asserted:
+# t =      75692 | [PASS]  pready is OFF
+# t =      75711 | [PASS]  pslverr is OFF
+# pready state when transfer ended:
+# t =      75732 | [PASS]  pready is OFF
+# 324 clock cycles have passed
+# --------------------------------------------------------------------------
+# t =      82231 | [WRITE] addr = 12'h01c, wdata = 32'h00000001
+# --------------------------------------------------------------------------
+# pready state when penable is first asserted:
+# t =      82252 | [PASS]  pready is OFF
+# pready state when transfer ended:
+# t =      82292 | [PASS]  pready is OFF
+# --------------------------------------------------------------------------
+# t =      82311 | [READ]  addr = 12'h004, exp rdata = 32'h00000014
+# --------------------------------------------------------------------------
+# pready state when penable is first asserted:
+# t =      82332 | [PASS]  pready is OFF
+# t =      82351 | [PASS]  output rdata = 32'h00000014
+# pready state when transfer ended:
+# t =      82372 | [PASS]  pready is OFF
+# --------------------------------------------------------------------------
+# t =      82391 | [READ]  addr = 12'h008, exp rdata = 32'h00000000
+# --------------------------------------------------------------------------
+# pready state when penable is first asserted:
+# t =      82412 | [PASS]  pready is OFF
+# t =      82431 | [PASS]  output rdata = 32'h00000000
+# pready state when transfer ended:
+# t =      82452 | [PASS]  pready is OFF
+# --------------------------------------------------------------------------
+# t =      82471 | [READ]  addr = 12'h01c, exp rdata = 32'h00000003
+# --------------------------------------------------------------------------
+# pready state when penable is first asserted:
+# t =      82492 | [PASS]  pready is OFF
+# t =      82511 | [PASS]  output rdata = 32'h00000003
+# pready state when transfer ended:
+# t =      82532 | [PASS]  pready is OFF
+# --------------------------------------------------------------------------
+# t =      82551 | [WRITE] addr = 12'h01c, wdata = 32'h00000000
+# --------------------------------------------------------------------------
+# pready state when penable is first asserted:
+# t =      82572 | [PASS]  pready is OFF
+# pready state when transfer ended:
+# t =      82612 | [PASS]  pready is OFF
+# 10 clock cycles have passed
+# --------------------------------------------------------------------------
+# t =      82831 | [READ]  addr = 12'h004, exp rdata = 32'h00000015
+# --------------------------------------------------------------------------
+# pready state when penable is first asserted:
+# t =      82852 | [PASS]  pready is OFF
+# t =      82871 | [PASS]  output rdata = 32'h00000015
+# pready state when transfer ended:
+# t =      82892 | [PASS]  pready is OFF
+# --------------------------------------------------------------------------
+# t =      82911 | [READ]  addr = 12'h008, exp rdata = 32'h00000000
+# --------------------------------------------------------------------------
+# pready state when penable is first asserted:
+# t =      82932 | [PASS]  pready is OFF
+# t =      82951 | [PASS]  output rdata = 32'h00000000
+# pready state when transfer ended:
+# t =      82972 | [PASS]  pready is OFF
+# ==========================================================================
+# 			CASE 2
+# ==========================================================================
+# --------------------------------------------------------------------------
+# t =      82991 | [WRITE] addr = 12'h000, wdata = 32'h00000402
+# --------------------------------------------------------------------------
+# pready state when penable is first asserted:
+# t =      83012 | [PASS]  pready is OFF
+# t =      83031 | [PASS]  pslverr is OFF
+# pready state when transfer ended:
+# t =      83052 | [PASS]  pready is OFF
+# --------------------------------------------------------------------------
+# t =      83071 | [WRITE] addr = 12'h004, wdata = 32'hffffffff
+# --------------------------------------------------------------------------
+# pready state when penable is first asserted:
+# t =      83092 | [PASS]  pready is OFF
+# pready state when transfer ended:
+# t =      83132 | [PASS]  pready is OFF
+# --------------------------------------------------------------------------
+# t =      83151 | [WRITE] addr = 12'h008, wdata = 32'h7fffffff
+# --------------------------------------------------------------------------
+# pready state when penable is first asserted:
+# t =      83172 | [PASS]  pready is OFF
+# pready state when transfer ended:
+# t =      83212 | [PASS]  pready is OFF
+# --------------------------------------------------------------------------
+# t =      83231 | [WRITE] addr = 12'h000, wdata = 32'h00000403
+# --------------------------------------------------------------------------
+# pready state when penable is first asserted:
+# t =      83252 | [PASS]  pready is OFF
+# t =      83271 | [PASS]  pslverr is OFF
+# pready state when transfer ended:
+# t =      83292 | [PASS]  pready is OFF
+# 920 clock cycles have passed
+# --------------------------------------------------------------------------
+# t =     101711 | [WRITE] addr = 12'h01c, wdata = 32'h00000001
+# --------------------------------------------------------------------------
+# pready state when penable is first asserted:
+# t =     101732 | [PASS]  pready is OFF
+# pready state when transfer ended:
+# t =     101772 | [PASS]  pready is OFF
+# --------------------------------------------------------------------------
+# t =     101791 | [READ]  addr = 12'h004, exp rdata = 32'h00000038
+# --------------------------------------------------------------------------
+# pready state when penable is first asserted:
+# t =     101812 | [PASS]  pready is OFF
+# t =     101831 | [PASS]  output rdata = 32'h00000038
+# pready state when transfer ended:
+# t =     101852 | [PASS]  pready is OFF
+# --------------------------------------------------------------------------
+# t =     101871 | [READ]  addr = 12'h008, exp rdata = 32'h80000000
+# --------------------------------------------------------------------------
+# pready state when penable is first asserted:
+# t =     101892 | [PASS]  pready is OFF
+# t =     101911 | [PASS]  output rdata = 32'h80000000
+# pready state when transfer ended:
+# t =     101932 | [PASS]  pready is OFF
+# --------------------------------------------------------------------------
+# t =     101951 | [READ]  addr = 12'h01c, exp rdata = 32'h00000003
+# --------------------------------------------------------------------------
+# pready state when penable is first asserted:
+# t =     101972 | [PASS]  pready is OFF
+# t =     101991 | [PASS]  output rdata = 32'h00000003
+# pready state when transfer ended:
+# t =     102012 | [PASS]  pready is OFF
+# --------------------------------------------------------------------------
+# t =     102031 | [WRITE] addr = 12'h01c, wdata = 32'h00000000
+# --------------------------------------------------------------------------
+# pready state when penable is first asserted:
+# t =     102052 | [PASS]  pready is OFF
+# pready state when transfer ended:
+# t =     102092 | [PASS]  pready is OFF
+# 25 clock cycles have passed
+# --------------------------------------------------------------------------
+# t =     102611 | [READ]  addr = 12'h004, exp rdata = 32'h0000003a
+# --------------------------------------------------------------------------
+# pready state when penable is first asserted:
+# t =     102632 | [PASS]  pready is OFF
+# t =     102651 | [PASS]  output rdata = 32'h0000003a
+# pready state when transfer ended:
+# t =     102672 | [PASS]  pready is OFF
+# --------------------------------------------------------------------------
+# t =     102691 | [READ]  addr = 12'h008, exp rdata = 32'h80000000
+# --------------------------------------------------------------------------
+# pready state when penable is first asserted:
+# t =     102712 | [PASS]  pready is OFF
+# t =     102731 | [PASS]  output rdata = 32'h80000000
+# pready state when transfer ended:
+# t =     102752 | [PASS]  pready is OFF
+# ==========================================================================
+# 			DIV_EN = 1, DIV_VAL = 5
+# ==========================================================================
+# ==========================================================================
+# 			CASE 1
+# ==========================================================================
+# --------------------------------------------------------------------------
+# t =     102771 | [WRITE] addr = 12'h000, wdata = 32'h00000402
+# --------------------------------------------------------------------------
+# pready state when penable is first asserted:
+# t =     102792 | [PASS]  pready is OFF
+# t =     102811 | [PASS]  pslverr is OFF
+# pready state when transfer ended:
+# t =     102832 | [PASS]  pready is OFF
+# --------------------------------------------------------------------------
+# t =     102851 | [WRITE] addr = 12'h000, wdata = 32'h00000503
+# --------------------------------------------------------------------------
+# pready state when penable is first asserted:
+# t =     102872 | [PASS]  pready is OFF
+# t =     102891 | [PASS]  pslverr is OFF
+# pready state when transfer ended:
+# t =     102912 | [PASS]  pready is OFF
+# 867 clock cycles have passed
+# --------------------------------------------------------------------------
+# t =     120271 | [WRITE] addr = 12'h01c, wdata = 32'h00000001
+# --------------------------------------------------------------------------
+# pready state when penable is first asserted:
+# t =     120292 | [PASS]  pready is OFF
+# pready state when transfer ended:
+# t =     120332 | [PASS]  pready is OFF
+# --------------------------------------------------------------------------
+# t =     120351 | [READ]  addr = 12'h004, exp rdata = 32'h0000001b
+# --------------------------------------------------------------------------
+# pready state when penable is first asserted:
+# t =     120372 | [PASS]  pready is OFF
+# t =     120391 | [PASS]  output rdata = 32'h0000001b
+# pready state when transfer ended:
+# t =     120412 | [PASS]  pready is OFF
+# --------------------------------------------------------------------------
+# t =     120431 | [READ]  addr = 12'h008, exp rdata = 32'h00000000
+# --------------------------------------------------------------------------
+# pready state when penable is first asserted:
+# t =     120452 | [PASS]  pready is OFF
+# t =     120471 | [PASS]  output rdata = 32'h00000000
+# pready state when transfer ended:
+# t =     120492 | [PASS]  pready is OFF
+# --------------------------------------------------------------------------
+# t =     120511 | [READ]  addr = 12'h01c, exp rdata = 32'h00000003
+# --------------------------------------------------------------------------
+# pready state when penable is first asserted:
+# t =     120532 | [PASS]  pready is OFF
+# t =     120551 | [PASS]  output rdata = 32'h00000003
+# pready state when transfer ended:
+# t =     120572 | [PASS]  pready is OFF
+# --------------------------------------------------------------------------
+# t =     120591 | [WRITE] addr = 12'h01c, wdata = 32'h00000000
+# --------------------------------------------------------------------------
+# pready state when penable is first asserted:
+# t =     120612 | [PASS]  pready is OFF
+# pready state when transfer ended:
+# t =     120652 | [PASS]  pready is OFF
+# 55 clock cycles have passed
+# --------------------------------------------------------------------------
+# t =     121771 | [READ]  addr = 12'h004, exp rdata = 32'h0000001d
+# --------------------------------------------------------------------------
+# pready state when penable is first asserted:
+# t =     121792 | [PASS]  pready is OFF
+# t =     121811 | [PASS]  output rdata = 32'h0000001d
+# pready state when transfer ended:
+# t =     121832 | [PASS]  pready is OFF
+# --------------------------------------------------------------------------
+# t =     121851 | [READ]  addr = 12'h008, exp rdata = 32'h00000000
+# --------------------------------------------------------------------------
+# pready state when penable is first asserted:
+# t =     121872 | [PASS]  pready is OFF
+# t =     121891 | [PASS]  output rdata = 32'h00000000
+# pready state when transfer ended:
+# t =     121912 | [PASS]  pready is OFF
+# ==========================================================================
+# 			CASE 2
+# ==========================================================================
+# --------------------------------------------------------------------------
+# t =     121931 | [WRITE] addr = 12'h000, wdata = 32'h00000502
+# --------------------------------------------------------------------------
+# pready state when penable is first asserted:
+# t =     121952 | [PASS]  pready is OFF
+# t =     121971 | [PASS]  pslverr is OFF
+# pready state when transfer ended:
+# t =     121992 | [PASS]  pready is OFF
+# --------------------------------------------------------------------------
+# t =     122011 | [WRITE] addr = 12'h004, wdata = 32'hffffffff
+# --------------------------------------------------------------------------
+# pready state when penable is first asserted:
+# t =     122032 | [PASS]  pready is OFF
+# pready state when transfer ended:
+# t =     122072 | [PASS]  pready is OFF
+# --------------------------------------------------------------------------
+# t =     122091 | [WRITE] addr = 12'h008, wdata = 32'h00000067
+# --------------------------------------------------------------------------
+# pready state when penable is first asserted:
+# t =     122112 | [PASS]  pready is OFF
+# pready state when transfer ended:
+# t =     122152 | [PASS]  pready is OFF
+# --------------------------------------------------------------------------
+# t =     122171 | [WRITE] addr = 12'h000, wdata = 32'h00000503
+# --------------------------------------------------------------------------
+# pready state when penable is first asserted:
+# t =     122192 | [PASS]  pready is OFF
+# t =     122211 | [PASS]  pslverr is OFF
+# pready state when transfer ended:
+# t =     122232 | [PASS]  pready is OFF
+# 78 clock cycles have passed
+# --------------------------------------------------------------------------
+# t =     123811 | [WRITE] addr = 12'h01c, wdata = 32'h00000001
+# --------------------------------------------------------------------------
+# pready state when penable is first asserted:
+# t =     123832 | [PASS]  pready is OFF
+# pready state when transfer ended:
+# t =     123872 | [PASS]  pready is OFF
+# --------------------------------------------------------------------------
+# t =     123891 | [READ]  addr = 12'h004, exp rdata = 32'h00000001
+# --------------------------------------------------------------------------
+# pready state when penable is first asserted:
+# t =     123912 | [PASS]  pready is OFF
+# t =     123931 | [PASS]  output rdata = 32'h00000001
+# pready state when transfer ended:
+# t =     123952 | [PASS]  pready is OFF
+# --------------------------------------------------------------------------
+# t =     123971 | [READ]  addr = 12'h008, exp rdata = 32'h00000068
+# --------------------------------------------------------------------------
+# pready state when penable is first asserted:
+# t =     123992 | [PASS]  pready is OFF
+# t =     124011 | [PASS]  output rdata = 32'h00000068
+# pready state when transfer ended:
+# t =     124032 | [PASS]  pready is OFF
+# --------------------------------------------------------------------------
+# t =     124051 | [READ]  addr = 12'h01c, exp rdata = 32'h00000003
+# --------------------------------------------------------------------------
+# pready state when penable is first asserted:
+# t =     124072 | [PASS]  pready is OFF
+# t =     124091 | [PASS]  output rdata = 32'h00000003
+# pready state when transfer ended:
+# t =     124112 | [PASS]  pready is OFF
+# --------------------------------------------------------------------------
+# t =     124131 | [WRITE] addr = 12'h01c, wdata = 32'h00000000
+# --------------------------------------------------------------------------
+# pready state when penable is first asserted:
+# t =     124152 | [PASS]  pready is OFF
+# pready state when transfer ended:
+# t =     124192 | [PASS]  pready is OFF
+# 159 clock cycles have passed
+# --------------------------------------------------------------------------
+# t =     127391 | [READ]  addr = 12'h004, exp rdata = 32'h00000006
+# --------------------------------------------------------------------------
+# pready state when penable is first asserted:
+# t =     127412 | [PASS]  pready is OFF
+# t =     127431 | [PASS]  output rdata = 32'h00000006
+# pready state when transfer ended:
+# t =     127452 | [PASS]  pready is OFF
+# --------------------------------------------------------------------------
+# t =     127471 | [READ]  addr = 12'h008, exp rdata = 32'h00000068
+# --------------------------------------------------------------------------
+# pready state when penable is first asserted:
+# t =     127492 | [PASS]  pready is OFF
+# t =     127511 | [PASS]  output rdata = 32'h00000068
+# pready state when transfer ended:
+# t =     127532 | [PASS]  pready is OFF
+# ==========================================================================
+# 			DIV_EN = 1, DIV_VAL = 6
+# ==========================================================================
+# ==========================================================================
+# 			CASE 1
+# ==========================================================================
+# --------------------------------------------------------------------------
+# t =     127551 | [WRITE] addr = 12'h000, wdata = 32'h00000502
+# --------------------------------------------------------------------------
+# pready state when penable is first asserted:
+# t =     127572 | [PASS]  pready is OFF
+# t =     127591 | [PASS]  pslverr is OFF
+# pready state when transfer ended:
+# t =     127612 | [PASS]  pready is OFF
+# --------------------------------------------------------------------------
+# t =     127631 | [WRITE] addr = 12'h000, wdata = 32'h00000603
+# --------------------------------------------------------------------------
+# pready state when penable is first asserted:
+# t =     127652 | [PASS]  pready is OFF
+# t =     127671 | [PASS]  pslverr is OFF
+# pready state when transfer ended:
+# t =     127692 | [PASS]  pready is OFF
+# 777 clock cycles have passed
+# --------------------------------------------------------------------------
+# t =     143251 | [WRITE] addr = 12'h01c, wdata = 32'h00000001
+# --------------------------------------------------------------------------
+# pready state when penable is first asserted:
+# t =     143272 | [PASS]  pready is OFF
+# pready state when transfer ended:
+# t =     143312 | [PASS]  pready is OFF
+# --------------------------------------------------------------------------
+# t =     143331 | [READ]  addr = 12'h004, exp rdata = 32'h0000000c
+# --------------------------------------------------------------------------
+# pready state when penable is first asserted:
+# t =     143352 | [PASS]  pready is OFF
+# t =     143371 | [PASS]  output rdata = 32'h0000000c
+# pready state when transfer ended:
+# t =     143392 | [PASS]  pready is OFF
+# --------------------------------------------------------------------------
+# t =     143411 | [READ]  addr = 12'h008, exp rdata = 32'h00000000
+# --------------------------------------------------------------------------
+# pready state when penable is first asserted:
+# t =     143432 | [PASS]  pready is OFF
+# t =     143451 | [PASS]  output rdata = 32'h00000000
+# pready state when transfer ended:
+# t =     143472 | [PASS]  pready is OFF
+# --------------------------------------------------------------------------
+# t =     143491 | [READ]  addr = 12'h01c, exp rdata = 32'h00000003
+# --------------------------------------------------------------------------
+# pready state when penable is first asserted:
+# t =     143512 | [PASS]  pready is OFF
+# t =     143531 | [PASS]  output rdata = 32'h00000003
+# pready state when transfer ended:
+# t =     143552 | [PASS]  pready is OFF
+# --------------------------------------------------------------------------
+# t =     143571 | [WRITE] addr = 12'h01c, wdata = 32'h00000000
+# --------------------------------------------------------------------------
+# pready state when penable is first asserted:
+# t =     143592 | [PASS]  pready is OFF
+# pready state when transfer ended:
+# t =     143632 | [PASS]  pready is OFF
+# 222 clock cycles have passed
+# --------------------------------------------------------------------------
+# t =     148091 | [READ]  addr = 12'h004, exp rdata = 32'h0000000f
+# --------------------------------------------------------------------------
+# pready state when penable is first asserted:
+# t =     148112 | [PASS]  pready is OFF
+# t =     148131 | [PASS]  output rdata = 32'h0000000f
+# pready state when transfer ended:
+# t =     148152 | [PASS]  pready is OFF
+# --------------------------------------------------------------------------
+# t =     148171 | [READ]  addr = 12'h008, exp rdata = 32'h00000000
+# --------------------------------------------------------------------------
+# pready state when penable is first asserted:
+# t =     148192 | [PASS]  pready is OFF
+# t =     148211 | [PASS]  output rdata = 32'h00000000
+# pready state when transfer ended:
+# t =     148232 | [PASS]  pready is OFF
+# ==========================================================================
+# 			CASE 2
+# ==========================================================================
+# --------------------------------------------------------------------------
+# t =     148251 | [WRITE] addr = 12'h000, wdata = 32'h00000602
+# --------------------------------------------------------------------------
+# pready state when penable is first asserted:
+# t =     148272 | [PASS]  pready is OFF
+# t =     148291 | [PASS]  pslverr is OFF
+# pready state when transfer ended:
+# t =     148312 | [PASS]  pready is OFF
+# --------------------------------------------------------------------------
+# t =     148331 | [WRITE] addr = 12'h004, wdata = 32'hffffffff
+# --------------------------------------------------------------------------
+# pready state when penable is first asserted:
+# t =     148352 | [PASS]  pready is OFF
+# pready state when transfer ended:
+# t =     148392 | [PASS]  pready is OFF
+# --------------------------------------------------------------------------
+# t =     148411 | [WRITE] addr = 12'h008, wdata = 32'h00000067
+# --------------------------------------------------------------------------
+# pready state when penable is first asserted:
+# t =     148432 | [PASS]  pready is OFF
+# pready state when transfer ended:
+# t =     148472 | [PASS]  pready is OFF
+# --------------------------------------------------------------------------
+# t =     148491 | [WRITE] addr = 12'h000, wdata = 32'h00000603
+# --------------------------------------------------------------------------
+# pready state when penable is first asserted:
+# t =     148512 | [PASS]  pready is OFF
+# t =     148531 | [PASS]  pslverr is OFF
+# pready state when transfer ended:
+# t =     148552 | [PASS]  pready is OFF
+# 78 clock cycles have passed
+# --------------------------------------------------------------------------
+# t =     150131 | [WRITE] addr = 12'h01c, wdata = 32'h00000001
+# --------------------------------------------------------------------------
+# pready state when penable is first asserted:
+# t =     150152 | [PASS]  pready is OFF
+# pready state when transfer ended:
+# t =     150192 | [PASS]  pready is OFF
+# --------------------------------------------------------------------------
+# t =     150211 | [READ]  addr = 12'h004, exp rdata = 32'h00000000
+# --------------------------------------------------------------------------
+# pready state when penable is first asserted:
+# t =     150232 | [PASS]  pready is OFF
+# t =     150251 | [PASS]  output rdata = 32'h00000000
+# pready state when transfer ended:
+# t =     150272 | [PASS]  pready is OFF
+# --------------------------------------------------------------------------
+# t =     150291 | [READ]  addr = 12'h008, exp rdata = 32'h00000068
+# --------------------------------------------------------------------------
+# pready state when penable is first asserted:
+# t =     150312 | [PASS]  pready is OFF
+# t =     150331 | [PASS]  output rdata = 32'h00000068
+# pready state when transfer ended:
+# t =     150352 | [PASS]  pready is OFF
+# --------------------------------------------------------------------------
+# t =     150371 | [READ]  addr = 12'h01c, exp rdata = 32'h00000003
+# --------------------------------------------------------------------------
+# pready state when penable is first asserted:
+# t =     150392 | [PASS]  pready is OFF
+# t =     150411 | [PASS]  output rdata = 32'h00000003
+# pready state when transfer ended:
+# t =     150432 | [PASS]  pready is OFF
+# --------------------------------------------------------------------------
+# t =     150451 | [WRITE] addr = 12'h01c, wdata = 32'h00000000
+# --------------------------------------------------------------------------
+# pready state when penable is first asserted:
+# t =     150472 | [PASS]  pready is OFF
+# pready state when transfer ended:
+# t =     150512 | [PASS]  pready is OFF
+# 159 clock cycles have passed
+# --------------------------------------------------------------------------
+# t =     153711 | [READ]  addr = 12'h004, exp rdata = 32'h00000002
+# --------------------------------------------------------------------------
+# pready state when penable is first asserted:
+# t =     153732 | [PASS]  pready is OFF
+# t =     153751 | [PASS]  output rdata = 32'h00000002
+# pready state when transfer ended:
+# t =     153772 | [PASS]  pready is OFF
+# --------------------------------------------------------------------------
+# t =     153791 | [READ]  addr = 12'h008, exp rdata = 32'h00000068
+# --------------------------------------------------------------------------
+# pready state when penable is first asserted:
+# t =     153812 | [PASS]  pready is OFF
+# t =     153831 | [PASS]  output rdata = 32'h00000068
+# pready state when transfer ended:
+# t =     153852 | [PASS]  pready is OFF
+# ==========================================================================
+# 			DIV_EN = 1, DIV_VAL = 7
+# ==========================================================================
+# ==========================================================================
+# 			CASE 1
+# ==========================================================================
+# --------------------------------------------------------------------------
+# t =     153871 | [WRITE] addr = 12'h000, wdata = 32'h00000602
+# --------------------------------------------------------------------------
+# pready state when penable is first asserted:
+# t =     153892 | [PASS]  pready is OFF
+# t =     153911 | [PASS]  pslverr is OFF
+# pready state when transfer ended:
+# t =     153932 | [PASS]  pready is OFF
+# --------------------------------------------------------------------------
+# t =     153951 | [WRITE] addr = 12'h000, wdata = 32'h00000703
+# --------------------------------------------------------------------------
+# pready state when penable is first asserted:
+# t =     153972 | [PASS]  pready is OFF
+# t =     153991 | [PASS]  pslverr is OFF
+# pready state when transfer ended:
+# t =     154012 | [PASS]  pready is OFF
+# 568 clock cycles have passed
+# --------------------------------------------------------------------------
+# t =     165391 | [WRITE] addr = 12'h01c, wdata = 32'h00000001
+# --------------------------------------------------------------------------
+# pready state when penable is first asserted:
+# t =     165412 | [PASS]  pready is OFF
+# pready state when transfer ended:
+# t =     165452 | [PASS]  pready is OFF
+# --------------------------------------------------------------------------
+# t =     165471 | [READ]  addr = 12'h004, exp rdata = 32'h00000004
+# --------------------------------------------------------------------------
+# pready state when penable is first asserted:
+# t =     165492 | [PASS]  pready is OFF
+# t =     165511 | [PASS]  output rdata = 32'h00000004
+# pready state when transfer ended:
+# t =     165532 | [PASS]  pready is OFF
+# --------------------------------------------------------------------------
+# t =     165551 | [READ]  addr = 12'h008, exp rdata = 32'h00000000
+# --------------------------------------------------------------------------
+# pready state when penable is first asserted:
+# t =     165572 | [PASS]  pready is OFF
+# t =     165591 | [PASS]  output rdata = 32'h00000000
+# pready state when transfer ended:
+# t =     165612 | [PASS]  pready is OFF
+# --------------------------------------------------------------------------
+# t =     165631 | [READ]  addr = 12'h01c, exp rdata = 32'h00000003
+# --------------------------------------------------------------------------
+# pready state when penable is first asserted:
+# t =     165652 | [PASS]  pready is OFF
+# t =     165671 | [PASS]  output rdata = 32'h00000003
+# pready state when transfer ended:
+# t =     165692 | [PASS]  pready is OFF
+# --------------------------------------------------------------------------
+# t =     165711 | [WRITE] addr = 12'h01c, wdata = 32'h00000000
+# --------------------------------------------------------------------------
+# pready state when penable is first asserted:
+# t =     165732 | [PASS]  pready is OFF
+# pready state when transfer ended:
+# t =     165772 | [PASS]  pready is OFF
+# 256 clock cycles have passed
+# --------------------------------------------------------------------------
+# t =     170911 | [READ]  addr = 12'h004, exp rdata = 32'h00000006
+# --------------------------------------------------------------------------
+# pready state when penable is first asserted:
+# t =     170932 | [PASS]  pready is OFF
+# t =     170951 | [PASS]  output rdata = 32'h00000006
+# pready state when transfer ended:
+# t =     170972 | [PASS]  pready is OFF
+# --------------------------------------------------------------------------
+# t =     170991 | [READ]  addr = 12'h008, exp rdata = 32'h00000000
+# --------------------------------------------------------------------------
+# pready state when penable is first asserted:
+# t =     171012 | [PASS]  pready is OFF
+# t =     171031 | [PASS]  output rdata = 32'h00000000
+# pready state when transfer ended:
+# t =     171052 | [PASS]  pready is OFF
+# ==========================================================================
+# 			CASE 2
+# ==========================================================================
+# --------------------------------------------------------------------------
+# t =     171071 | [WRITE] addr = 12'h000, wdata = 32'h00000702
+# --------------------------------------------------------------------------
+# pready state when penable is first asserted:
+# t =     171092 | [PASS]  pready is OFF
+# t =     171111 | [PASS]  pslverr is OFF
+# pready state when transfer ended:
+# t =     171132 | [PASS]  pready is OFF
+# --------------------------------------------------------------------------
+# t =     171151 | [WRITE] addr = 12'h004, wdata = 32'hffffffff
+# --------------------------------------------------------------------------
+# pready state when penable is first asserted:
+# t =     171172 | [PASS]  pready is OFF
+# pready state when transfer ended:
+# t =     171212 | [PASS]  pready is OFF
+# --------------------------------------------------------------------------
+# t =     171231 | [WRITE] addr = 12'h008, wdata = 32'hffffff5f
+# --------------------------------------------------------------------------
+# pready state when penable is first asserted:
+# t =     171252 | [PASS]  pready is OFF
+# pready state when transfer ended:
+# t =     171292 | [PASS]  pready is OFF
+# --------------------------------------------------------------------------
+# t =     171311 | [WRITE] addr = 12'h000, wdata = 32'h00000703
+# --------------------------------------------------------------------------
+# pready state when penable is first asserted:
+# t =     171332 | [PASS]  pready is OFF
+# t =     171351 | [PASS]  pslverr is OFF
+# pready state when transfer ended:
+# t =     171372 | [PASS]  pready is OFF
+# 779 clock cycles have passed
+# --------------------------------------------------------------------------
+# t =     186971 | [WRITE] addr = 12'h01c, wdata = 32'h00000001
+# --------------------------------------------------------------------------
+# pready state when penable is first asserted:
+# t =     186992 | [PASS]  pready is OFF
+# pready state when transfer ended:
+# t =     187032 | [PASS]  pready is OFF
+# --------------------------------------------------------------------------
+# t =     187051 | [READ]  addr = 12'h004, exp rdata = 32'h00000005
+# --------------------------------------------------------------------------
+# pready state when penable is first asserted:
+# t =     187072 | [PASS]  pready is OFF
+# t =     187091 | [PASS]  output rdata = 32'h00000005
+# pready state when transfer ended:
+# t =     187112 | [PASS]  pready is OFF
+# --------------------------------------------------------------------------
+# t =     187131 | [READ]  addr = 12'h008, exp rdata = 32'hffffff60
+# --------------------------------------------------------------------------
+# pready state when penable is first asserted:
+# t =     187152 | [PASS]  pready is OFF
+# t =     187171 | [PASS]  output rdata = 32'hffffff60
+# pready state when transfer ended:
+# t =     187192 | [PASS]  pready is OFF
+# --------------------------------------------------------------------------
+# t =     187211 | [READ]  addr = 12'h01c, exp rdata = 32'h00000003
+# --------------------------------------------------------------------------
+# pready state when penable is first asserted:
+# t =     187232 | [PASS]  pready is OFF
+# t =     187251 | [PASS]  output rdata = 32'h00000003
+# pready state when transfer ended:
+# t =     187272 | [PASS]  pready is OFF
+# --------------------------------------------------------------------------
+# t =     187291 | [WRITE] addr = 12'h01c, wdata = 32'h00000000
+# --------------------------------------------------------------------------
+# pready state when penable is first asserted:
+# t =     187312 | [PASS]  pready is OFF
+# pready state when transfer ended:
+# t =     187352 | [PASS]  pready is OFF
+# 239 clock cycles have passed
+# --------------------------------------------------------------------------
+# t =     192151 | [READ]  addr = 12'h004, exp rdata = 32'h00000007
+# --------------------------------------------------------------------------
+# pready state when penable is first asserted:
+# t =     192172 | [PASS]  pready is OFF
+# t =     192191 | [PASS]  output rdata = 32'h00000007
+# pready state when transfer ended:
+# t =     192212 | [PASS]  pready is OFF
+# --------------------------------------------------------------------------
+# t =     192231 | [READ]  addr = 12'h008, exp rdata = 32'hffffff60
+# --------------------------------------------------------------------------
+# pready state when penable is first asserted:
+# t =     192252 | [PASS]  pready is OFF
+# t =     192271 | [PASS]  output rdata = 32'hffffff60
+# pready state when transfer ended:
+# t =     192292 | [PASS]  pready is OFF
+# ==========================================================================
+# 			DIV_EN = 1, DIV_VAL = 8
+# ==========================================================================
+# ==========================================================================
+# 			CASE 1
+# ==========================================================================
+# --------------------------------------------------------------------------
+# t =     192311 | [WRITE] addr = 12'h000, wdata = 32'h00000702
+# --------------------------------------------------------------------------
+# pready state when penable is first asserted:
+# t =     192332 | [PASS]  pready is OFF
+# t =     192351 | [PASS]  pslverr is OFF
+# pready state when transfer ended:
+# t =     192372 | [PASS]  pready is OFF
+# --------------------------------------------------------------------------
+# t =     192391 | [WRITE] addr = 12'h000, wdata = 32'h00000803
+# --------------------------------------------------------------------------
+# pready state when penable is first asserted:
+# t =     192412 | [PASS]  pready is OFF
+# t =     192431 | [PASS]  pslverr is OFF
+# pready state when transfer ended:
+# t =     192452 | [PASS]  pready is OFF
+# 999 clock cycles have passed
+# --------------------------------------------------------------------------
+# t =     212451 | [WRITE] addr = 12'h01c, wdata = 32'h00000001
+# --------------------------------------------------------------------------
+# pready state when penable is first asserted:
+# t =     212472 | [PASS]  pready is OFF
+# pready state when transfer ended:
+# t =     212512 | [PASS]  pready is OFF
+# --------------------------------------------------------------------------
+# t =     212531 | [READ]  addr = 12'h004, exp rdata = 32'h00000003
+# --------------------------------------------------------------------------
+# pready state when penable is first asserted:
+# t =     212552 | [PASS]  pready is OFF
+# t =     212571 | [PASS]  output rdata = 32'h00000003
+# pready state when transfer ended:
+# t =     212592 | [PASS]  pready is OFF
+# --------------------------------------------------------------------------
+# t =     212611 | [READ]  addr = 12'h008, exp rdata = 32'h00000000
+# --------------------------------------------------------------------------
+# pready state when penable is first asserted:
+# t =     212632 | [PASS]  pready is OFF
+# t =     212651 | [PASS]  output rdata = 32'h00000000
+# pready state when transfer ended:
+# t =     212672 | [PASS]  pready is OFF
+# --------------------------------------------------------------------------
+# t =     212691 | [READ]  addr = 12'h01c, exp rdata = 32'h00000003
+# --------------------------------------------------------------------------
+# pready state when penable is first asserted:
+# t =     212712 | [PASS]  pready is OFF
+# t =     212731 | [PASS]  output rdata = 32'h00000003
+# pready state when transfer ended:
+# t =     212752 | [PASS]  pready is OFF
+# --------------------------------------------------------------------------
+# t =     212771 | [WRITE] addr = 12'h01c, wdata = 32'h00000000
+# --------------------------------------------------------------------------
+# pready state when penable is first asserted:
+# t =     212792 | [PASS]  pready is OFF
+# pready state when transfer ended:
+# t =     212832 | [PASS]  pready is OFF
+# 333 clock cycles have passed
+# --------------------------------------------------------------------------
+# t =     219511 | [READ]  addr = 12'h004, exp rdata = 32'h00000005
+# --------------------------------------------------------------------------
+# pready state when penable is first asserted:
+# t =     219532 | [PASS]  pready is OFF
+# t =     219551 | [PASS]  output rdata = 32'h00000005
+# pready state when transfer ended:
+# t =     219572 | [PASS]  pready is OFF
+# --------------------------------------------------------------------------
+# t =     219591 | [READ]  addr = 12'h008, exp rdata = 32'h00000000
+# --------------------------------------------------------------------------
+# pready state when penable is first asserted:
+# t =     219612 | [PASS]  pready is OFF
+# t =     219631 | [PASS]  output rdata = 32'h00000000
+# pready state when transfer ended:
+# t =     219652 | [PASS]  pready is OFF
+# ==========================================================================
+# 			CASE 2
+# ==========================================================================
+# --------------------------------------------------------------------------
+# t =     219671 | [WRITE] addr = 12'h000, wdata = 32'h00000802
+# --------------------------------------------------------------------------
+# pready state when penable is first asserted:
+# t =     219692 | [PASS]  pready is OFF
+# t =     219711 | [PASS]  pslverr is OFF
+# pready state when transfer ended:
+# t =     219732 | [PASS]  pready is OFF
+# --------------------------------------------------------------------------
+# t =     219751 | [WRITE] addr = 12'h004, wdata = 32'h0000ffff
+# --------------------------------------------------------------------------
+# pready state when penable is first asserted:
+# t =     219772 | [PASS]  pready is OFF
+# pready state when transfer ended:
+# t =     219812 | [PASS]  pready is OFF
+# --------------------------------------------------------------------------
+# t =     219831 | [WRITE] addr = 12'h008, wdata = 32'hffffffff
+# --------------------------------------------------------------------------
+# pready state when penable is first asserted:
+# t =     219852 | [PASS]  pready is OFF
+# pready state when transfer ended:
+# t =     219892 | [PASS]  pready is OFF
+# --------------------------------------------------------------------------
+# t =     219911 | [WRITE] addr = 12'h000, wdata = 32'h00000803
+# --------------------------------------------------------------------------
+# pready state when penable is first asserted:
+# t =     219932 | [PASS]  pready is OFF
+# t =     219951 | [PASS]  pslverr is OFF
+# pready state when transfer ended:
+# t =     219972 | [PASS]  pready is OFF
+# 300 clock cycles have passed
+# --------------------------------------------------------------------------
+# t =     225991 | [WRITE] addr = 12'h01c, wdata = 32'h00000001
+# --------------------------------------------------------------------------
+# pready state when penable is first asserted:
+# t =     226012 | [PASS]  pready is OFF
+# pready state when transfer ended:
+# t =     226052 | [PASS]  pready is OFF
+# --------------------------------------------------------------------------
+# t =     226071 | [READ]  addr = 12'h004, exp rdata = 32'h00010000
+# --------------------------------------------------------------------------
+# pready state when penable is first asserted:
+# t =     226092 | [PASS]  pready is OFF
+# t =     226111 | [PASS]  output rdata = 32'h00010000
+# pready state when transfer ended:
+# t =     226132 | [PASS]  pready is OFF
+# --------------------------------------------------------------------------
+# t =     226151 | [READ]  addr = 12'h008, exp rdata = 32'hffffffff
+# --------------------------------------------------------------------------
+# pready state when penable is first asserted:
+# t =     226172 | [PASS]  pready is OFF
+# t =     226191 | [PASS]  output rdata = 32'hffffffff
+# pready state when transfer ended:
+# t =     226212 | [PASS]  pready is OFF
+# --------------------------------------------------------------------------
+# t =     226231 | [READ]  addr = 12'h01c, exp rdata = 32'h00000003
+# --------------------------------------------------------------------------
+# pready state when penable is first asserted:
+# t =     226252 | [PASS]  pready is OFF
+# t =     226271 | [PASS]  output rdata = 32'h00000003
+# pready state when transfer ended:
+# t =     226292 | [PASS]  pready is OFF
+# --------------------------------------------------------------------------
+# t =     226311 | [WRITE] addr = 12'h01c, wdata = 32'h00000000
+# --------------------------------------------------------------------------
+# pready state when penable is first asserted:
+# t =     226332 | [PASS]  pready is OFF
+# pready state when transfer ended:
+# t =     226372 | [PASS]  pready is OFF
+# 777 clock cycles have passed
+# --------------------------------------------------------------------------
+# t =     241931 | [READ]  addr = 12'h004, exp rdata = 32'h00010003
+# --------------------------------------------------------------------------
+# pready state when penable is first asserted:
+# t =     241952 | [PASS]  pready is OFF
+# t =     241971 | [PASS]  output rdata = 32'h00010003
+# pready state when transfer ended:
+# t =     241992 | [PASS]  pready is OFF
+# --------------------------------------------------------------------------
+# t =     242011 | [READ]  addr = 12'h008, exp rdata = 32'hffffffff
+# --------------------------------------------------------------------------
+# pready state when penable is first asserted:
+# t =     242032 | [PASS]  pready is OFF
+# t =     242051 | [PASS]  output rdata = 32'hffffffff
+# pready state when transfer ended:
+# t =     242072 | [PASS]  pready is OFF
+# ==========================================================================
+# 			DIV_EN = 0, DIV_VAL = 2
+# ==========================================================================
+# --------------------------------------------------------------------------
+# t =     242091 | [WRITE] addr = 12'h000, wdata = 32'h00000802
+# --------------------------------------------------------------------------
+# pready state when penable is first asserted:
+# t =     242112 | [PASS]  pready is OFF
+# t =     242131 | [PASS]  pslverr is OFF
+# pready state when transfer ended:
+# t =     242152 | [PASS]  pready is OFF
+# --------------------------------------------------------------------------
+# t =     242171 | [WRITE] addr = 12'h000, wdata = 32'h00000201
+# --------------------------------------------------------------------------
+# pready state when penable is first asserted:
+# t =     242192 | [PASS]  pready is OFF
+# t =     242211 | [PASS]  pslverr is OFF
+# pready state when transfer ended:
+# t =     242232 | [PASS]  pready is OFF
+# 20 clock cycles have passed
+# --------------------------------------------------------------------------
+# t =     242651 | [WRITE] addr = 12'h01c, wdata = 32'h00000001
+# --------------------------------------------------------------------------
+# pready state when penable is first asserted:
+# t =     242672 | [PASS]  pready is OFF
+# pready state when transfer ended:
+# t =     242712 | [PASS]  pready is OFF
+# --------------------------------------------------------------------------
+# t =     242731 | [READ]  addr = 12'h004, exp rdata = 32'h00000018
+# --------------------------------------------------------------------------
+# pready state when penable is first asserted:
+# t =     242752 | [PASS]  pready is OFF
+# t =     242771 | [PASS]  output rdata = 32'h00000018
+# pready state when transfer ended:
+# t =     242792 | [PASS]  pready is OFF
+# --------------------------------------------------------------------------
+# t =     242811 | [READ]  addr = 12'h008, exp rdata = 32'h00000000
+# --------------------------------------------------------------------------
+# pready state when penable is first asserted:
+# t =     242832 | [PASS]  pready is OFF
+# t =     242851 | [PASS]  output rdata = 32'h00000000
+# pready state when transfer ended:
+# t =     242872 | [PASS]  pready is OFF
+# --------------------------------------------------------------------------
+# t =     242891 | [READ]  addr = 12'h01c, exp rdata = 32'h00000003
+# --------------------------------------------------------------------------
+# pready state when penable is first asserted:
+# t =     242912 | [PASS]  pready is OFF
+# t =     242931 | [PASS]  output rdata = 32'h00000003
+# pready state when transfer ended:
+# t =     242952 | [PASS]  pready is OFF
+# --------------------------------------------------------------------------
+# t =     242971 | [WRITE] addr = 12'h01c, wdata = 32'h00000000
+# --------------------------------------------------------------------------
+# pready state when penable is first asserted:
+# t =     242992 | [PASS]  pready is OFF
+# pready state when transfer ended:
+# t =     243032 | [PASS]  pready is OFF
+# 9 clock cycles have passed
+# --------------------------------------------------------------------------
+# t =     243231 | [READ]  addr = 12'h004, exp rdata = 32'h00000024
+# --------------------------------------------------------------------------
+# pready state when penable is first asserted:
+# t =     243252 | [PASS]  pready is OFF
+# t =     243271 | [PASS]  output rdata = 32'h00000024
+# pready state when transfer ended:
+# t =     243292 | [PASS]  pready is OFF
+# --------------------------------------------------------------------------
+# t =     243311 | [READ]  addr = 12'h008, exp rdata = 32'h00000000
+# --------------------------------------------------------------------------
+# pready state when penable is first asserted:
+# t =     243332 | [PASS]  pready is OFF
+# t =     243351 | [PASS]  output rdata = 32'h00000000
+# pready state when transfer ended:
+# t =     243372 | [PASS]  pready is OFF
+# ==========================================================================
+# 			DIV_EN = 0, DIV_VAL = 8
+# ==========================================================================
+# --------------------------------------------------------------------------
+# t =     243391 | [WRITE] addr = 12'h000, wdata = 32'h00000802
+# --------------------------------------------------------------------------
+# pready state when penable is first asserted:
+# t =     243412 | [PASS]  pready is OFF
+# t =     243431 | [PASS]  pslverr is ON
+# pready state when transfer ended:
+# t =     243452 | [PASS]  pready is OFF
+# --------------------------------------------------------------------------
+# t =     243471 | [READ]  addr = 12'h000, exp rdata = 32'h00000201
+# --------------------------------------------------------------------------
+# pready state when penable is first asserted:
+# t =     243492 | [PASS]  pready is OFF
+# t =     243511 | [PASS]  output rdata = 32'h00000201
+# pready state when transfer ended:
+# t =     243532 | [PASS]  pready is OFF
+# --------------------------------------------------------------------------
+# t =     243551 | [WRITE] addr = 12'h000, wdata = 32'h00000200
+# --------------------------------------------------------------------------
+# pready state when penable is first asserted:
+# t =     243572 | [PASS]  pready is OFF
+# t =     243591 | [PASS]  pslverr is OFF
+# pready state when transfer ended:
+# t =     243612 | [PASS]  pready is OFF
+# --------------------------------------------------------------------------
+# t =     243631 | [WRITE] addr = 12'h000, wdata = 32'h00000801
+# --------------------------------------------------------------------------
+# pready state when penable is first asserted:
+# t =     243652 | [PASS]  pready is OFF
+# t =     243671 | [PASS]  pslverr is OFF
+# pready state when transfer ended:
+# t =     243692 | [PASS]  pready is OFF
+# 20 clock cycles have passed
+# --------------------------------------------------------------------------
+# t =     244111 | [WRITE] addr = 12'h01c, wdata = 32'h00000001
+# --------------------------------------------------------------------------
+# pready state when penable is first asserted:
+# t =     244132 | [PASS]  pready is OFF
+# pready state when transfer ended:
+# t =     244172 | [PASS]  pready is OFF
+# --------------------------------------------------------------------------
+# t =     244191 | [READ]  addr = 12'h004, exp rdata = 32'h00000018
+# --------------------------------------------------------------------------
+# pready state when penable is first asserted:
+# t =     244212 | [PASS]  pready is OFF
+# t =     244231 | [PASS]  output rdata = 32'h00000018
+# pready state when transfer ended:
+# t =     244252 | [PASS]  pready is OFF
+# --------------------------------------------------------------------------
+# t =     244271 | [READ]  addr = 12'h008, exp rdata = 32'h00000000
+# --------------------------------------------------------------------------
+# pready state when penable is first asserted:
+# t =     244292 | [PASS]  pready is OFF
+# t =     244311 | [PASS]  output rdata = 32'h00000000
+# pready state when transfer ended:
+# t =     244332 | [PASS]  pready is OFF
+# --------------------------------------------------------------------------
+# t =     244351 | [READ]  addr = 12'h01c, exp rdata = 32'h00000003
+# --------------------------------------------------------------------------
+# pready state when penable is first asserted:
+# t =     244372 | [PASS]  pready is OFF
+# t =     244391 | [PASS]  output rdata = 32'h00000003
+# pready state when transfer ended:
+# t =     244412 | [PASS]  pready is OFF
+# --------------------------------------------------------------------------
+# t =     244431 | [WRITE] addr = 12'h01c, wdata = 32'h00000000
+# --------------------------------------------------------------------------
+# pready state when penable is first asserted:
+# t =     244452 | [PASS]  pready is OFF
+# pready state when transfer ended:
+# t =     244492 | [PASS]  pready is OFF
+# 9 clock cycles have passed
+# --------------------------------------------------------------------------
+# t =     244691 | [READ]  addr = 12'h004, exp rdata = 32'h00000024
+# --------------------------------------------------------------------------
+# pready state when penable is first asserted:
+# t =     244712 | [PASS]  pready is OFF
+# t =     244731 | [PASS]  output rdata = 32'h00000024
+# pready state when transfer ended:
+# t =     244752 | [PASS]  pready is OFF
+# --------------------------------------------------------------------------
+# t =     244771 | [READ]  addr = 12'h008, exp rdata = 32'h00000000
+# --------------------------------------------------------------------------
+# pready state when penable is first asserted:
+# t =     244792 | [PASS]  pready is OFF
+# t =     244811 | [PASS]  output rdata = 32'h00000000
+# pready state when transfer ended:
+# t =     244832 | [PASS]  pready is OFF
+# ==========================================================================
+# 	SUMMARY:
+# Total test cases run: 591
+# Passed              : 591
+# Failed              : 0
+# PASSED ALL TESTS
+# ==========================================================================
+# ** Note: $finish    : ../tb/test_bench.v(302)
+#    Time: 244932 ns  Iteration: 0  Instance: /test_bench
+# Saving coverage database on exit...
+# End time: 11:02:05 on Oct 06,2025, Elapsed time: 0:00:02
+# Errors: 0, Warnings: 0
