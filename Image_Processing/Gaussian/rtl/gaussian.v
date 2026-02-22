@@ -53,13 +53,17 @@ module gaussian #(
     reg [1:0] top_edge_pipe, bot_edge_pipe;
     reg [1:0] left_edge_pipe, right_edge_pipe;
 
+    wire flush = (valid_pipe != 0) && (!valid_in); 
+    wire shift_en = valid_in || flush;
+    wire [7:0] pixel_val = valid_in ? s_axis_tdata : 8'h0;
+
     line_buffer #(
         .W (W)
     ) u_buffer (
         .clk (clk),
         .rst_n (rst_n),
-        .pixel_in (s_axis_tdata),
-        .valid_in (valid_in),
+        .pixel_in (pixel_val),
+        .valid_in (shift_en),
 
         .top (top),
         .mid (mid),
@@ -75,7 +79,7 @@ module gaussian #(
             x_cnt <= 0;
             y_cnt <= 0;
             first_done <= 0;
-        end else if (valid_in) begin
+        end else if (shift_en) begin
             if (x_cnt < W - 1) begin
                 x_cnt <= x_cnt + 1;
             end else begin
@@ -113,7 +117,7 @@ module gaussian #(
             valid_pipe <= 0;
             tlast_pipe <= 0;
         end else begin
-            if (valid_in) begin
+            if (shift_en) begin
                 top_edge_pipe <= {top_edge_pipe[0], raw_top_edge};
                 bot_edge_pipe <= {bot_edge_pipe[0], raw_bot_edge};
                 left_edge_pipe <= {left_edge_pipe[0], raw_left_edge};
@@ -142,7 +146,7 @@ module gaussian #(
         .top (top),
         .mid (mid),
         .bot (bot),
-        .valid_in (valid_in),
+        .valid_in (shift_en),
 
         .top_edge (top_edge_pipe[1]),
         .bot_edge (bot_edge_pipe[1]),
